@@ -56,7 +56,7 @@ function prepareSlideshow () {
 	var slideshow = document.createElement("div");
 	slideshow.setAttribute("id","slideshow");
 	var preview = document.createElement("img");
-	preview.setAttribute("src","images/topic.png");
+	preview.setAttribute("src", "http://i1.tietuku.com/03d020b70d92e8a8.png" );
 	preview.setAttribute("alt","building");
 	preview.setAttribute("id","preview");
 
