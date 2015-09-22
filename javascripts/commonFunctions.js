@@ -3,12 +3,12 @@
 // 多重函数绑定
 function addLoadEvent (func) {
 	// body...
-	var oldolad = window.load;
+	var oldonload = window.onload;
 	if (typeof window.onload != "function") {
 		window.onload = func;
 	}else{
 		window.onload = function(){
-			oldolad();
+			oldonload();
 			func();
 		}
 	}

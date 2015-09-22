@@ -1,0 +1,39 @@
+/*板式 外边距 字体大小*/
+body *{
+	font-size: 1em;
+}
+nav a{
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 150%
+	
+
+}
+article{
+	line-height: 1.8em;
+}
+article p{
+	margin: 1em 0;
+	font: 1.2em;
+}
+h1{
+	font: 2.5em normal;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+h2{
+	font: 2em normal;
+	margin-top: 1em;
+}
+h3{
+	font: 1.4em normal;
+	margin-top: 1em;
+}
+
+/*page live*/
+dt{
+	margin-left: 1em;
+}
+dd{
+	margin-right: 3em;
+}
