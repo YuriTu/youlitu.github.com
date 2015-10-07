@@ -1,0 +1,94 @@
+    /*本身*/
+    html {
+      height: 100%;
+    }
+    body {
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+    }
+
+ 
+    .bg {
+      position: absolute;
+      min-height: 100% !important;
+      width: 100%;
+      z-index: 0;
+    }    
+    .ibg-bg {
+      position: absolute;
+    }
+
+
+    /*按钮设置*/
+
+#main{
+
+  /*margin: 0 auto;*/
+  z-index: 999;
+  position: absolute;
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+  text-align: center;
+  left: 50%;
+  top: 30%;
+  transform:translateX(-50%);
+  /*transform:translateY(-50%);*/
+}
+#btn,h1,h2{
+  /*position: absolute;*/
+  z-index: 999;
+  /*display: block;*/
+  /*margin: 0 auto;*/
+  /*float: left;*/
+  /*left: 50%;*/
+   /*transform:translateX(-50%);*/
+   font-family: Microsoft YaHei, serif;   
+   font-weight: bold;
+
+   margin-bottom: 10px;
+}
+h1{
+  font-size: 50px;
+  color: #CCCCCC;
+}
+h2{
+  font-size: 40px;
+  color: #CCCCCC;
+}
+#btn {
+  display: inline-block;
+  /*width: 180px;*/
+  /*height: 30px;*/
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  /* padding: 10px 30px; */
+/*  background-color: #1abc9c;
+  font-size: 20px;
+  color: #FFFFFF;*/
+  /*vertical-align: middle;*/
+}
+#btn a {
+  display: inline-block;
+  /*vertical-align: middle;*/
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #FFFFFF;
+  /*padding: 10px 80px;*/
+  border-radius: 10px;
+  background-color: #999999;
+}
+a:hover {
+  /* style */
+  background-color: #CCCCCC !important;
+}
+
+a.click{
+  background-color: #666666;
+}

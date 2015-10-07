@@ -36,13 +36,13 @@ function prepareSlideshow () {
 	slideshow.setAttribute("id","slideshow");
 	// 加入遮罩
 	var frame = document.createElement("img");
-	frame.setAttribute("src","./images/frame.png");
+	frame.setAttribute("src","../images/frame.png");
 	frame.setAttribute("alt","");
 	frame.setAttribute("id","frame");
 	slideshow.appendChild(frame);
 
 	var preview = document.createElement("img");
-	preview.setAttribute("src","./images/slideshow.jpg");
+	preview.setAttribute("src","../images/slideshow.jpg");
 	preview.setAttribute("alt","a glimpse of what awaits you");
 	preview.setAttribute("id","preview");
 	slideshow.appendChild(preview);
@@ -120,7 +120,7 @@ function preparePlaceHolder () {
 	if (!document.getElementById("imageGallery")) {return false};
 	var placeHolder = document.createElement("img");
 	placeHolder.setAttribute("id","placeHolder");
-	placeHolder.setAttribute("src","./images/placeholderAB.jpg" );
+	placeHolder.setAttribute("src","../images/placeholderAB.jpg" );
 	placeHolder.setAttribute("alt","placeHolder");
 	var description = document.createElement("p");
 	description.setAttribute("id","description");
