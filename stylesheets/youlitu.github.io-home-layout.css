@@ -1,0 +1,167 @@
+/*布局板式*/
+body,html,#main{
+	/*width: 1920px;*/
+	height: 100%;
+	overflow: hidden;
+}
+#main{
+	position: relative;
+}
+
+#sidebar{
+	position: absolute;
+	left: 0;	
+	width: 300px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+}
+#introduce{
+	position: absolute;
+	height: 100%;
+	left:  300px;
+	width: 100%;
+}
+
+#homeList{
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	text-align: center;
+}
+#homeList li{
+	width: 300px;
+	height: 100px;
+	line-height: 100px;
+	cursor: pointer;
+	font-weight: bold;
+}
+#page_home{
+
+}
+#page_skill,#page_project,#page_contact{
+
+}
+
+
+/*intro page*/
+#introduce,#introduce ul,#introduce ul li,#page_home div{
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+}
+
+/*intro前面的p*/
+#introduce > p{
+	z-index: 0;
+	position: absolute;
+	transform:translateX(-50%);
+	transform:translateY(-50%);
+	top: 45%;
+	left: 20%;
+}
+#page_home div{
+	position: absolute;
+	left: 200px;
+	top: 230px;
+} 
+#page_home div img{
+	display: inline;
+	width: 230px;
+	height: 230px;
+	border: 8px solid ;
+	border-radius: 50%;
+	/*图片的高度*/
+	margin-bottom: -120px;
+}
+#page_home div span{
+	display: inline-block;
+	line-height: 50px;
+
+}
+#page_home div h3,
+#page_home div h4,
+#page_home div p{
+	line-height: 50px;
+}
+
+
+/*skill page*/
+#page_skill div #EChatrs_skill{
+	height: 800px;
+	width: 800px;
+}
+
+#page_skill div img{
+	width: 500px;
+	height: 500px;
+}
+#EChatrs_skill{
+	width: 1500px;
+	height: 950px;
+}
+
+
+/*page project*/
+/*所有展示div 为16:9  450*254*/
+div.projectShow{
+	position: relative;
+	width: 450px;
+	height: 254px;
+}
+div.projectShow p{
+	position: absolute;
+	top: 15%;
+	transform:translateY(-50%);
+	left: 50%;
+	font-size: 20px;
+	color: blue;
+	font-weight: bold;
+}
+
+
+
+#page_project,#page_project div.container{
+	position: relative;
+}
+div.container div.projectShow {
+	margin-left: 70px;
+	padding-top: 70px;
+	/*margin-top: 100px;*/
+} 
+#projectTip{
+	display: inline-block;
+	width: 350px;
+	/*height: 100px;*/
+	background-color: yellow;
+	border: 2px solid #000;
+	position: absolute;
+}
+/*page contact*/
+/*竖排
+电话 邮箱 微信  qq git  175*175 */
+#page_contact
+
+#page_contact div{
+	/*position: absolute;*/
+
+}
+#page_contact div{
+	height: 100%;
+	width:175px;
+	margin-left: 200px;
+}
+#page_contact div a{
+	width: 175px;
+	height: 195px;
+}
+#page_contact div img{
+	display: block;
+	padding-top: 20px;
+	/*border: 2px solid #fff;*/
+	/*margin-bottom:  20px;*/
+	/*margin-left: 200px;*/
+	/*transform:rotate(300deg);*/
+}
+

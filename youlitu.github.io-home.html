@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>welcome to Yuri's home</title>
 	<!-- jQuery -->
-	<script type="text/javascript" src = "javascripts/jquery-2.1.4.js"></script>	
+	<script type="text/javascript" src = "javascripts/librarys/jquery-2.1.4.js"></script>	
 	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/youlitu.github.io-home-basic.css">
 
@@ -15,23 +15,61 @@
 	<!-- sidebar -->
 	<div id = "sidebar">
 		<ul id = "homeList">
-			<li>home</li>
-			<li>skill</li>
-			<li>project</li>
-			<li>contact</li>
+			<li id = "home">home</li>
+			<li id = "skill">skill</li>
+			<li id = "project">project</li>
+			<li id = "contact">contact</li>
 		</ul>
 	</div>
 	<!-- intro page -->
 	<div id = "introduce">
+		<p>while( ! ( succeed = try() ) )</p>
 		<ul>
-			<li>home</li>
-			<li>skill</li>
-			<li>project</li>
-			<li>contact</li>
+			<li id = "page_home">
+				<div class = "container">
+					<img src="images/git_header.png" / >
+					<span>一个程序猿、一个学俄语的、一个吹口琴的、一个乐观的小人物。</span>
+					<h3>为什么选择我  ?</h3>
+					<h4>选择我你可以得到 :</h4>
+					<p>一位前端开发者<br>一位好学的程序员，他可以向其他方向拓展<br>半个全栈开发者<br>半个俄语翻译<br>给团队带来新的思维碰撞</p>
+					<div id="para">
+						<h3>也许你会觉得...</h3>
+						<h4>文科生你来应聘程序猿 ？你在逗我？</h4>
+						<p>但是!<br>诚然我没有系统的学过计算机基础课程<br>这并不会影响到我完成前端方面的工作<br>并且距离入职时间还有近半年<br>这足够我学完一系列的基础课程</p>
+					</div>
+				</div>
+			</li>
+			<li id = "page_skill">
+				<div class = "container" id = "EChatrs_skill">
+
+				</div>
+			</li>
+			<li id = "page_project">
+				<div class = "container">
+					<div class = "projectShow" id = "projectOne"  title = "">
+						<a href="Project/javaScriptFor12/javascriptFor12-index.html"><img src="images/project/projectShow_1.jpg"></a>
+					</div>
+					<div class = "projectShow" id = "projectTwo" title = "">
+						<a href="https://youlitu.github.io/"><img src="images/project/projectShow_2.jpg"></a>
+					</div>
+				</div>
+			</li>
+			<li id = "page_contact">
+				<div class = "container">
+					<a href="Tel:17092931916"><img src="images/icons/phone.png"/></a>
+					<a href="mailto:tuqiang_ru@163.com"><img src="images/icons/mail.png"/></a>
+					<a href="#" title = "youli-xsy"><img src="images/icons/wechat.png"/></a>
+					<a href="#" title = "867862428"><img src="images/icons/qq.png"/></a>
+					<a href="https://youlitu.github.io/"><img src="images/icons/git.png"/></a>				
+				</div>
+			</li>
 		</ul>
 	</div>
 </div>
-
+<!-- ECharts 文件 -->
+<script type="text/javascript" src = "javascripts/librarys/echarts-all.js"></script>
+<script type="text/javascript" src = "javascripts/librarys/jQueryRotate.js"></script>
 <script type="text/javascript" src = "javascripts/youlitu.github.io-home.js"></script>
+<script type="text/javascript" src = "javascripts/youlitu.github.io-home-EChatrs_skill.js"></script>
 </body>
 </html>

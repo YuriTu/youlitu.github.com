@@ -1,0 +1,51 @@
+/*颜色控制*/
+/*主要布局*/
+#main{
+	background-color: #0099CC;
+}
+#sidebar{
+	/*background-color: #0099CC;*/
+}
+#introduce{
+	/*background-color: #0099CC;*/
+}
+
+/*sidebar部分*/
+#homeList li{
+	/*background-color: #666666;*/
+	color: #FFFFFF;	
+}
+
+/*introduce部分*/
+#introduce > p{
+	color: #FFFFFF;
+}
+/*home*/
+#introduce #page_home{
+	background-color: #CCCCCC;
+}
+#page_home div img{
+	border-color: #fff;
+}
+#page_home div h3{
+	color: #990033;	
+}
+#page_home div h4{
+	color:  #990033;
+}
+#page_home #para{
+	margin-top: 36px;
+	margin-left: 400px;
+}
+/*skill*/
+#introduce #page_skill{
+	background-color: #FFF;
+}
+/*project*/
+#introduce #page_project{
+	background-color: #FFFF66;
+}
+/*contact*/
+#introduce #page_contact{
+	background-color: #CCFF66;
+}

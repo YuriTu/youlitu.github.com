@@ -1,0 +1,41 @@
+/*字体 外边距*/
+body,html{
+	font-family: Microsoft YaHei,SimSun;
+}
+
+/*list*/
+#homeList li{
+	/*font-family: Microsoft YaHei,SimSun;*/
+		font-size: 50px;
+}
+/*introduce*/
+#introduce > p{
+	/*font-family: Microsoft YaHei,SimSun;*/
+	font-size: 30px;
+	letter-spacing: 5px;
+}
+/*home*/
+#page_home div span{
+	font-size: 30px;
+	margin-bottom: 130px;
+	margin-left: 80px;
+}
+#page_home div h3,#page_home div h4,#page_home div p{
+	font-size: 25px;
+	margin-left: 30px;
+
+}
+#page_home div h3{
+	font-size: 30px;
+	font-weight: bold;
+}
+#page_home div h4{
+	font-size: 30px;
+}
+
+
+/*page project*/
+#projectTip {
+	font-size: 15px;
+	line-height: 25px;
+}
