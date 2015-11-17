@@ -1,0 +1,244 @@
+/*color layout typography*/
+
+html,body,header,.header,#backView{
+	height: 100%;
+	/*overflow: hidden;*/
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;	
+}
+a{
+	text-decoration: none !important;
+}
+header{
+
+	background-color: #3893c6;
+	background-repeat: repeat-x;
+	background-image: linear-gradient(320deg, #27678a, #3893c6);
+}
+
+.bg-color{
+	background-color: #3893c6;
+	color: #fff;
+}
+.header .jumbotron .logo{
+	width: 100%;
+	max-width: 350px;
+	margin: 20px auto;
+}
+.jumbotron h2{
+	font-weight: 300;
+	max-width: 350px;
+	margin: 30px auto 20px;
+}
+.jumbotron .latest-version{
+	color: #eaeae8;
+	text-align: left;
+	font-size: 0.9em;
+	position: relative;
+	margin: 0 0 20px;
+	top: 20px;
+}
+
+.forkme{
+	width: 300px;
+	transform:rotate(45deg);
+
+	position: fixed;
+	top: 50px;
+	right: -90px;
+
+	background-color: #fff;
+	color: #3893c6;
+
+	border-top:2px solid #3893c6;
+	border-bottom: 2px solid #3893c6;
+
+	z-index: 9999;
+
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+}
+
+/*#backView{
+	background-color: inherit;
+	color: #fff;
+	text-align: center;
+	margin-top: 0;
+}*/
+
+.section{
+	padding: 50px 15px;
+}
+.section h3{
+	margin: 40px 0 30px;
+}
+
+
+.footer{
+	width: 100%;
+	
+	font-weight: 300px;
+	color: #fff;
+	padding: 20px 0;
+	color: #fff;
+
+}
+footer a{
+	color: #fff;
+}
+#backView{
+	margin-bottom: 30px;
+}
+
+
+
+
+/* @group Colours */
+/* @end Colours */
+/* @group Bootstrap Variables */
+/* @end Bootstrap Variables */
+/* @group Typography */
+/* @end Typography */
+/* @group Misc */
+html,
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.btn {
+  border: 0;
+}
+.forkme {
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  padding: 5px;
+  position: fixed;
+  top: 50px;
+  right: -90px;
+  background-color: #ffffff;
+  color: #3893c6;
+  width: 300px;
+  text-align: center;
+  border-top: 2px solid #3893c6;
+  border-bottom: 2px solid #3893c6;
+  z-index: 9999;
+}
+/* @end Misc */
+/* @group Header */
+.header {
+  background-color: #3893c6;
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(320deg, #27678a, #3893c6);
+  background-image: -o-linear-gradient(320deg, #27678a, #3893c6);
+  background-image: linear-gradient(320deg, #27678a, #3893c6);
+}
+@media (min-width: 768px) {
+  .header {
+    min-height: 100%;
+  }
+}
+.header .jumbotron {
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .header .jumbotron {
+    margin-top: 190px;
+  }
+}
+.header .jumbotron .logo {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+}
+.header .jumbotron h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  max-width: 350px;
+  margin: 30px auto 20px;
+}
+.header .jumbotron .btn-group {
+  margin: 5px 0 10px;
+}
+.header .jumbotron .btn-group .btn {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .header .jumbotron .btn-group .btn {
+    display: inline-block;
+    width: auto;
+    margin: 10px 0;
+  }
+}
+.header .jumbotron .latest-version {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #eaeae8;
+  text-align: left;
+  font-size: 0.9em;
+  margin: 0 0 20px;
+  position: relative;
+  top: 15px;
+}
+@media (min-width: 992px) {
+  .header .jumbotron .latest-version {
+    position: static;
+    margin: 0;
+  }
+}
+.header .jumbotron .latest-version .version,
+.header .jumbotron .latest-version .date {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  .header .jumbotron .latest-version .date {
+    text-align: right;
+  }
+}
+.header .jumbotron .screenshot {
+  margin: 20px auto;
+}
+/* @end Header */
+/* @group Homepage */
+.section {
+  padding: 50px 15px;
+}
+.section.alt {
+  background-color: #3893c6;
+  color: #ffffff;
+}
+.section h3 {
+  margin: 40px 0 30px;
+}
+.section .screenshot {
+  margin: 30px auto;
+}
+/* @end Homepage */
+/* @group Footer */
+.footer {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: #3893c6;
+  color: #ffffff;
+  padding: 20px 0;
+}
+.footer a {
+  color: #e6e6e6;
+}
+/* @end Footer */
+
+
+

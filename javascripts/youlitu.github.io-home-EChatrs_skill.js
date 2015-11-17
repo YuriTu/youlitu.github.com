@@ -86,13 +86,13 @@ var option = {
                 itemStyle: createRandomItemStyle()
             },
             {
-                name: "Zepio.js",
+                name: "Less",
                 value: 1965,
                 itemStyle: createRandomItemStyle()
             },
             {
-                name: "JQuery Mobile",
-                value: 1847,
+                name: "Bootstrap",
+                value: 5847,
                 itemStyle: createRandomItemStyle()
             },
             {
@@ -111,7 +111,7 @@ var option = {
                 itemStyle: createRandomItemStyle()
             },
             {
-                name: "office",
+                name: "Node.js",
                 value: 3462,
                 itemStyle: createRandomItemStyle()
             },

@@ -42,10 +42,12 @@ body,html,#main{
 #page_skill,#page_project,#page_contact{
 
 }
-
+.container{
+	padding: 30px;
+}
 
 /*intro page*/
-#introduce,#introduce ul,#introduce ul li,#page_home div{
+#introduce,#introduce ul,#introduce ul li,#page_home .container{
 	position: relative;
 
 	width: 100%;
@@ -61,51 +63,31 @@ body,html,#main{
 	top: 45%;
 	left: 20%;
 }
-#page_home div{
-	position: absolute;
-	left: 200px;
-	top: 230px;
-} 
-#page_home div img{
+
+.headerIcon{
 	display: inline;
-	width: 230px;
+	width: 100%;
+	max-width: 230px;
 	height: 230px;
 	border: 8px solid ;
+	padding-left: 0px;
+	padding-right: 0px;
 	border-radius: 50%;
 	/*图片的高度*/
-	margin-bottom: -120px;
+	/*margin-bottom: -120px;*/
 }
-#page_home div span{
-	display: inline-block;
-	line-height: 50px;
-
-}
-#page_home div h3,
-#page_home div h4,
-#page_home div p{
-	line-height: 50px;
-}
-
 
 /*skill page*/
-#page_skill div #EChatrs_skill{
-	height: 800px;
-	width: 800px;
-}
 
-#page_skill div img{
-	width: 500px;
-	height: 500px;
-}
 #EChatrs_skill{
-	width: 1500px;
-	height: 950px;
+	width: 100%;
+	height: 100%;
 }
 
 
 /*page project*/
 /*所有展示div 为16:9  450*254*/
-div.projectShow{
+/*div.projectShow{
 	position: relative;
 	width: 450px;
 	height: 254px;
@@ -128,12 +110,19 @@ div.projectShow p{
 div.container div.projectShow {
 	margin-left: 70px;
 	padding-top: 70px;
-	/*margin-top: 100px;*/
-} 
+	
+} */
+#page_project .container{
+	padding-left: 50px;
+	margin: 0px;
+}
+#page_project .container .row{
+	margin-bottom: 20px;
+}
 #projectTip{
 	display: inline-block;
 	width: 350px;
-	/*height: 100px;*/
+	
 	background-color: yellow;
 	border: 2px solid #000;
 	position: absolute;
@@ -141,13 +130,12 @@ div.container div.projectShow {
 /*page contact*/
 /*竖排
 电话 邮箱 微信  qq git  175*175 */
-#page_contact
-
-#page_contact div{
-	/*position: absolute;*/
-
+#page_contact .container{
+	width: 80%;
+	margin: 0;
 }
-#page_contact div{
+
+/*#page_contact div{
 	height: 100%;
 	width:175px;
 	margin-left: 200px;
@@ -159,9 +147,15 @@ div.container div.projectShow {
 #page_contact div img{
 	display: block;
 	padding-top: 20px;
-	/*border: 2px solid #fff;*/
-	/*margin-bottom:  20px;*/
-	/*margin-left: 200px;*/
-	/*transform:rotate(300deg);*/
-}
 
+}*/
+
+
+@media (min-width: 992px){
+	#page_home .container .row{
+		margin-top: 100px;
+	}
+	#page_contact .container .row{
+		margin-top:22%;
+	}
+}
