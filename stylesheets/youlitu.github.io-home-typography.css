@@ -43,8 +43,14 @@ body,html{
 
 /*iphone*/
 @media (max-width: 767px){
-	body,h2,h3,p{
-		font-size: 0.5em !important;
+	#page_home div h2{
+		font-size: 1.2em ;
+	}
+	#page_home div h3{
+		font-style: 1.1em;
+	}
+	#page_home div h4,#page_home div p{
+		font-size: 1em;
 	}
 	#homeList li a{
 		font-size: 0.5em;
