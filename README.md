@@ -31,7 +31,7 @@
 		<li>熟悉HTML5、CSS布局，使用JS交互  <a href="https://youlitu.github.io/Project/javaScriptFor12/javascriptFor12-index.html">作品</a></li>
 		<li>熟悉常用JS库JQuery； AJAX 搭建；会使用sass 优化CSS。<a href="https://youlitu.github.io/">作品</a></li>
 		<li>了解后台技术中的PHP和node.js，会使用MySQL进行文件读取、Linux开发环境中centOS非图形化系统的基础操作。</li>
-		<li>会使用bootstrap进行移动端响应式开发。</li>
+		<li>会使用bootstrap进行移动端响应式开发。 <a href="https://youlitu.github.io/Project/Gitify/PeojectGitify.html">作品</a></li>
 		<li>会使用Git 的基本操作进行版本控制。</li>
 		<li>熟悉Photoshop、premiere 平面设计视频剪辑；制作的AMV三天有1500+点击量。</li>
 </ol>
