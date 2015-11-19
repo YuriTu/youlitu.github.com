@@ -30,30 +30,37 @@
 <!-- main -->
 <div id = "main">
 	<!-- sidebar -->
-	<nav class="navbar navbar-primary " id = "sidebar">
+	<div id = "sidebar" class="hidden-xs hidden-sm">
+		<ul id = "homeList">
+			<li id = "home">home</li>
+			<li id = "skill">skill</li>
+			<li id = "project">project</li>
+			<li id = "contact">contact松岛枫</li>
+		</ul>
+	</div>
+<!-- 	<nav class="navbar navbar-primary " id = "sidebar">
 		<div class="container-fluid">
-			<!-- brand and toggle get grouped -->
-			<div class="navbar-header">
-				<a href="#" class="navbar-brand">Yuri's home versions 1.1.0</a>
-				<button class="navbar-toggle collapsed"id="xs-bar-btn" data-toggle="collapse" data-target = "#navList" >
+			brand and toggle get grouped
+			<div class="navbar-header ">
+				<a href="#" class="navbar-brand">Yuri's home<br>vision 1.1.0</a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target = "#navList" aria-expanded = "false">
 					<span class="sr-only">Toggle navigation icon</span>
-					<!-- <span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> -->
-					<span class="glyphicon glyphicon-triangle-bottom"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 			</div>
-			<!-- nav links,and other content for toggling -->
+			nav links,and other content for toggling
 			<div class="collapse navbar-collapse" id="navList">
 				<ul class="nav navbar-nav" id="homeList">
-					<li><a href="#" class="text-left" id="home">home</a></li>
-					<li><a href="#" class="text-left" id="skill">skill</a></li>
-					<li><a href="#" class="text-left" id="project">project</a></li>
-					<li><a href="#" class="text-left" id="contact">contact</a></li>
+					<li><a href="#" id="home">home</a></li>
+					<li><a href="#" id="skill">skill</a></li>
+					<li><a href="#" id="project">project</a></li>
+					<li><a href="#" id="contact">contact</a></li>
 				</ul>
 			</div>			
 		</div>		
-	</nav>
+	</nav> -->
 	<!-- intro page -->
 	<div id = "introduce">
 		<p>while( ! ( succeed = try() ) )</p>
@@ -61,17 +68,17 @@
 			<li id = "page_home">
 				<div class = "container">
 					<div class="row">
-						<img class="col-lg-9 col-lg-offset-3 col-md-3 col-sm-3 col-xs-4  headerIcon img-responsive img-circle" src="images/git_header.png" / >
-						<h2 class = "col-lg-6 col-lg-offset-2 col-md-9 col-xs-8 ">一个程序猿、一个学俄语的、一个乐观的小人物。</h2>
+						<img class="col-md-9 col-md-offset-3  headerIcon img-responsive" src="images/git_header.png" / >
+						<h2 class = "col-md-6 col-md-offset-2">一个程序猿、一个学俄语的、一个乐观的小人物。</h2>
 			
 					</div>	
 					<div class="row">
-						<div class=" col-lg-4 col-lg-offset-1 col-md-6 article" >
+						<div class=" col-md-4 col-md-offset-1 article" >
 							<h3>为什么选择我  ?</h3>
 							<h4>选择我你可以得到 :</h4>
 							<p>一位前端开发者<br>一位好学的程序员，他可以向其他方向拓展<br>半个全栈开发者<br>半个俄语翻译<br>给团队带来新的思维碰撞</p>
 						</div>
-						<div class="col-lg-4 col-lg-offset-0 col-md-6 article"  >
+						<div class="col-md-4 col-md-offset-0 article"  >
 							<h3>也许你会觉得...</h3>
 							<h4>文科生你来应聘程序猿 ？你在逗我？</h4>
 							<p>但是!<br>诚然我没有系统的学过计算机基础课程<br>这并不会影响到我完成前端方面的工作<br>并且距离入职时间还有近半年<br>这足够我学完一系列的基础课程</p>
@@ -85,16 +92,16 @@
 			<li id = "page_project">
 				<div class = "container">
 					<div class="row">
-						<div class = "col-lg-5 col-lg-offset-1  col-md-6 col-xs-6 projectShow" id = "projectOne"  title = "">
-							<a href="Project/javaScriptFor12/javascriptFor12-index.html"><img class="img-responsive" src="images/project/projectShow_1.jpg"></a>
+						<div class = "col-md-3 col-md-offset-2 projectShow" id = "projectOne"  title = "">
+							<a href="Project/javaScriptFor12/javascriptFor12-index.html"><img src="images/project/projectShow_1.jpg"></a>
 						</div>
-						<div class = "col-lg-5 col-lg-offset-1  col-md-6 col-xs-6 projectShow" id = "projectTwo" title = "">
-							<a href="https://youlitu.github.io/"><img class="img-responsive" src="images/project/projectShow_2.JPG"></a>
+						<div class = "col-md-3 col-md-offset-4 projectShow" id = "projectTwo" title = "">
+							<a href="https://youlitu.github.io/"><img src="images/project/projectShow_2.JPG"></a>
 						</div>
 					</div>	
 					<div class="row">
-						<div class = "col-lg-5 col-lg-offset-1 col-md-6 col-xs-6 projectShow" id = "projectThree"  title = "">
-							<a href="Project/Gitify/PeojectGitify.html"><img class="img-responsive" src="images/project/projectShow_3.JPG"></a>
+						<div class = "col-md-3 col-md-offset-2 projectShow" id = "projectThree"  title = "">
+							<a href="Project/Gitify/PeojectGitify.html"><img src="images/project/projectShow_3.JPG"></a>
 						</div>
 					</div>				
 				</div>
@@ -102,10 +109,10 @@
 			<li id = "page_contact">
 				<div class = "container">
 					<div class="row">
-						<a class="col-lg-2 col-lg-offset-1 col-md-3 col-xs-6 " href="Tel:17092931916"><img class="img-responsive" src="images/icons/phone.png"/></a>
-						<a class="col-lg-2 col-md-3 col-lg-offset-1 col-xs-6" href="mailto:tuqiang_ru@163.com"><img class="img-responsive" src="images/icons/mail.png"/></a>
-						<a class="col-lg-2 col-md-3 col-lg-offset-1 col-xs-6" href="#" title = "youli-xsy"><img class="img-responsive" src="images/icons/wechat.png"/></a>				
-						<a class="col-lg-2 col-md-3 col-lg-offset-1 col-xs-6 " href="https://youlitu.github.io/"><img class="img-responsive" src="images/icons/git.png"/></a>
+						<a class="col-md-2 col-md-offset-1 " href="Tel:17092931916"><img src="images/icons/phone.png"/></a>
+						<a class="col-md-2 col-md-offset-1" href="mailto:tuqiang_ru@163.com"><img src="images/icons/mail.png"/></a>
+						<a class="col-md-2 col-md-offset-1" href="#" title = "youli-xsy"><img src="images/icons/wechat.png"/></a>				
+						<a class="col-md-2 col-md-offset-1 " href="https://youlitu.github.io/"><img src="images/icons/git.png"/></a>
 					</div>									
 				</div>
 			</li>
@@ -117,8 +124,6 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <!-- ECharts 文件 -->
 <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/echarts/2.2.7/echarts-all.js"></script>
-<!-- bootstrap -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- 外部引用 -->
 <script type="text/javascript" src = "javascripts/librarys/jQueryRotate.js"></script>
 <script type="text/javascript" src = "javascripts/youlitu.github.io-home.js"></script>

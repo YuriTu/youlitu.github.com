@@ -39,3 +39,109 @@ body,html{
 	font-size: 15px;
 	line-height: 25px;
 }
+
+
+/*iphone*/
+@media (max-width: 767px){
+	body,h2,h3,p{
+		font-size: 0.5em !important;
+	}
+	#homeList li a{
+		font-size: 0.5em;
+		line-height: 10px;
+	}
+}
+
+
+
+/*vertical ipad*/
+@media(min-width: 768px){
+	html,body,#main{
+		overflow: hidden;	
+	}
+}
+@media(min-width:768px) and (max-width: 992px){
+
+	body{
+		font-size: 0.8em;
+	}
+
+	#homeList li a{
+		font-size: 0.8em;
+	}
+}
+
+
+/*ipad*/
+@media (min-width:  992px) and(max-width: 1170px){
+
+	#page_home .container .row{
+		margin-top: 0px !important;
+		margin-left: -10%;
+	}
+	#introduce{
+		font-size: 0.8em !important;
+	}
+	.headerIcon{
+		max-width: 100px;
+	}
+
+	#page_contact .container{
+		/*margin-left: 10%;*/
+		padding-top: 10%;
+		padding-left: 10%;
+	}
+
+
+}
+
+
+
+@media(max-width:1170px){
+	#introduce{
+		left: 0px;
+	}
+}
+
+
+/*pc*/
+@media (min-width: 1171px){
+	html,body,#main{
+		overflow: hidden;	
+	}
+	#page_home .container {
+		padding-top: 10%;
+		padding-left: 10%;
+	}
+	/*第四页*/
+	#page_contact .container{
+		padding-top:23%;
+	}
+	#sidebar{
+	position: absolute !important;
+	left: 0;	
+	width: 300px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	}
+	#homeList{
+		position: absolute;
+		top: 50%;
+		transform:translateY(-50%);
+		text-align: center;
+	}
+	#homeList li {
+		margin-left: -25px;
+
+		width: 300px;
+		height: 100px;
+		line-height: 50px;
+		cursor: pointer;
+		font-weight: bold;
+	}
+	.navbar-nav>li>a{
+		line-height: 50px;
+	}
+
+}

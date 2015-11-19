@@ -23,7 +23,7 @@ $(function  () {
 
   // 点击事件
   // home
-  $("#homeList li").click(function() {
+  $("#homeList li a").click(function() {
     /* Act on the event */
     var show_width = $("#introduce ul li").width();
     // console.log(show_width);
@@ -41,6 +41,8 @@ $(function  () {
       .fadeIn("fast")
       // .stop(true) 
       .animate({left : "0px"}, 1000)
+    $("#navList")
+      .css('aria-expanded', 'false');
   });
 
   // 项目title展示事件  
@@ -98,7 +100,7 @@ $(function  () {
           animateTo :360
         })
         $(this)
-          .animate({width: "150px", height: "150px"}, "fast")
+          .animate({width: "170px", height: "170px"}, "fast")
       },
       mouseout:function(){
         $(this).stop(true)

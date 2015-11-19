@@ -5,10 +5,14 @@
 }
 
 /*sidebar部分*/
-#homeList li{
+#homeList li a{
 	/*background-color: #666666;*/
-	color: #FFFFFF;	
+	color: #FFFFFF !important;	
 }
+.nav>li>a:hover,.nav>li>a:focus{
+	background-color: inherit;
+}
+
 
 /*introduce部分*/
 #introduce > p{
