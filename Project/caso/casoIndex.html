@@ -10,17 +10,17 @@
 	<meta name = "description" content = "">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- reset -->
-	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
 	<!-- 浏览器版本提示 -->
 <!-- 	[if lt IE 7 ]>
 	<p class = "chromeframe">You are using an<strong>outdated</strong>browser...</p>
 	<p class = "chromeframe">浏览器太旧啦~</p> -->
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-<!--     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-<!-- 	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
-	<link rel="stylesheet" type="text/css" href="stylesheets/librarys/bootstrap.min.css">
-	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/librarys/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="CSS/casoIndex.css">
 	<!-- ie9提示 -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,27 +35,193 @@
 	<div class="container">
 		<header>
 			<!-- nav -->
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- brand -->
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed" type="button" data-toggle = "collapsed" data-target = "" aria-expanded = "flase">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<img class="navbar-brand" src="images/logo.jpg">
+					</div>
+					<!-- nav links -->
+					<div class="collapse navbar-collapse" id="navbarIndex">
+						<!-- navbar-nav -->
+						<ul class="nav navbar-nav">
+							<!-- first dropdown nav -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup="true" aria-expanded = "flase">搜索留学课程 <span class="caret"></span></a>
+								<!-- dropdown content -->
+								<ul class="dropdown-menu">
+									<li><a href="#">TEXT</a></li>
+								</ul>
+							</li>
+							<!-- second dropdown nav -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup="true" aria-expanded = "flase">留学指南与建议<span class="caret"></span></a>
+								<!-- dropdown content -->
+								<ul class="dropdown-menu">
+									<li><a href="#">TEXT</a></li>
+								</ul>
+							</li>
+							<!-- third dropdown nav -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup="true" aria-expanded = "flase">为什么选择CASO? <span class="caret"></span></a>
+								<!-- dropdown content -->
+								<ul class="dropdown-menu">
+									<li><a href="#">TEXT</a></li>
+								</ul>
+							</li>
+						</ul><!-- end of navbar-nav -->
+
+						<!-- The from ID & search -->
+						<ul class="nav navbar-nav navbar-right">
+							<li id="navbar-navSearch"><a href="#"></a></li>
+							<li id="navbar-navID"><a href="#"></a></li>	
+						</ul>
+						<!-- <form class="navbar-form"></form> -->
+
+
+					</div> <!-- end of navbar-collapse -->
+				</div> <!-- end of container-fluid -->
+			</nav>
 			<!-- carousel -->
+			<!-- background-img -->
+			<div class="container-fluid">
+				<!-- search banner -->
+				<!-- 48px size -->
+				<h1>寻找最适合你的留学课程</h1>
+				<!-- nav ？ -->
+			</div>
 		</header>
 		<div class="main" id="main">
 			<!-- major -->
-			<div class="container">
-				<h3 class="text-center">没想好该学习什么专业？</h3>
-				<p class="text-center">看看我们的推荐</p>
+			<div class="container" id="section1">
+				<!-- 40px -->
+				<h2 class="text-center">没想好该学习什么专业？</h2>
+				<!-- 23px -->
+				<h4 class="text-center">看看我们的推荐</h4>
+				<!-- introduce major -->
+				<!-- first row -->
 				<div class="row">
-					img
+					<!-- major name 27px; -->
+					<div class="col-md-4">
+						<p>法学</p>
+					</div>
+					<div class="col-md-4">
+						<p>计算机科学</p>
+					</div>
+					<div class="col-md-4">
+						<p>工程学</p>
+					</div>
+				</div>
+				<!-- second row -->
+				<div class="row">
+					<div class="col-md-4">
+						<p>建筑学</p>
+					</div>
+					<div class="col-md-4">
+						<p>艺术设计</p>
+					</div>
+					<div class="col-md-4">
+						<p>商科管理</p>
+					</div>
 				</div>
 			</div>
 			<!-- position -->
-			
+			<div class="container" id="section2">
+				<h2>热门留学目的地</h2>
+				<div class="row">
+					<!-- position name 24px -->
+					<div class="col-md-4">
+						<p>英国</p>
+					</div>
+					<div class="col-md-4">
+						<p>澳大利亚</p>
+					</div>
+					<div class="col-md-4">
+						<p>美国</p>
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col-md-4">
+						<p>新西兰</p>
+					</div>
+					<div class="col-md-4">
+						<p>新加坡</p>
+					</div>
+					<div class="col-md-4">
+						<p>马来西亚</p>
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col-md-4">
+						<p>瑞典</p>
+					</div>
+					<div class="col-md-4">
+						<p>爱尔兰</p>
+					</div>
+					<div class="col-md-4">
+						<p>香港</p>
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col-md-4">
+						<p>荷兰</p>
+					</div>
+					<div class="col-md-4">
+						<p>加拿大</p>
+					</div>
+					<div class="col-md-4">
+						<p>不确定该到哪里留学？</p>
+						<button class="btn btn-default">我们来帮你选！</button>
+					</div>
+				</div>
+			</div>
 			<!-- ask -->
-			<!-- collage -->
+			<div class="container" id="section3">
+				<!-- 41px -->
+				<h2>留学相关的重要资讯和指南</h2>
+				<h4><a href="#">浏览所有文章</a></h4>
+				<div class="row">
+					<div class="col-md-6"></div>
+					<div class="col-md-3"></div>
+					<div class="col-md-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6"></div>
+					<div class="col-md-6"></div>
+				</div>
+				<!-- collage -->
+				<!-- 分割线 -->
+				<h2>你知道这所大学吗？</h2>
+				<div class="row"></div>
+			</div>			
 			<!-- dosonething -->
+			<div class="row">
+				<div class="col-md-6">查看大学排名</div>
+				<div class="col-md-6">查找招生活动</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">阅读学生点评</div>
+				<div class="col-md-6">观看留学生视频</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">阅读最新留学资讯</div>
+				<div class="col-md-6">下载招生简章</div>
+			</div>
 			<!-- friend -->		
 		</div>
 		<footer>
 			
 		</footer>
+		<div class="goBackToHomePage"><a href="">GO Back</a></div>
 	</div>
 	<!-- JQ文件 -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	

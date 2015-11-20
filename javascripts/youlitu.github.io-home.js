@@ -91,33 +91,31 @@ $(function  () {
 
 
     // contact 页面图标动画
-    $("#page_contact div img").rotate({
-      bind:{
-      mouseover:function(){
-        $(this)
-          .stop(true)
-          .rotate({
-          animateTo :360
-        })
-        $(this)
-          .animate({width: "170px", height: "170px"}, "fast")
-      },
-      mouseout:function(){
-        $(this).stop(true)
-        $(this).rotate({
-          animateTo:0
-        })
-        $(this)
-          .animate({width: "175px", height: "175px"}, "fast")
+  $("#page_contact div img").rotate({
+    bind:{
+    mouseover:function(){
+      $(this)
+        .stop(true)
+        .rotate({
+        animateTo :360
+      })
+      $(this)
+        .animate({width: "170px", height: "170px"}, "fast")
+    },
+    mouseout:function(){
+      $(this).stop(true)
+      $(this).rotate({
+        animateTo:0
+      })
+      $(this)
+        .animate({width: "175px", height: "175px"}, "fast")
       }
-
     }
-
-
-    });
+  });
    
-
-
+  // 创建返回按钮
+  // var $goBackToHomePage = $("<div class='goBackToHomePage'><a href="">GO Back</a></div>");  
+  // $('body').append($goBackToHomePage);
 
  
 })

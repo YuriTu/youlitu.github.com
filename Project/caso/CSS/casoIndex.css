@@ -1,0 +1,58 @@
+/*casoIndex*/
+
+/*header*/
+
+/*nav*/
+
+
+
+/*navbar-nav right icon*/
+.container-fluid #navbarIndex>.navbar-right li{
+
+	background-image: url(../images/navbarIcon.png);
+	background-repeat: no-repeat;
+	/*width: 26px;*/
+	/*height: 26px;*/
+	overflow: hidden;
+}
+26px width + margin-right 10px 
+.container-fluid #navbarIndex>.navbar-right li:first-child{
+	background-position: 0,0;
+}
+.container-fluid #navbarIndex>.navbar-right li:last-child{
+	background-position: -36px,0px;
+}
+
+
+
+
+
+
+
+
+
+
+div.goBackToHomePage{
+	/*sqare*/
+	width: 50px;
+	height: 50px;
+	/*position*/
+	display: inline-block;
+	position: fixed;
+	right: 5px;
+	bottom: 15px;
+	z-index: 99999 !important;
+	/*color*/
+	background-color: #99CCCC;
+	/*border*/
+
+}
+div.goBackToHomePage a{
+	/*word*/
+	font-family: "Microsoft YaHei","SimSun";
+	font-size: 20px;
+	line-height: 20px;
+	color: #fff !important;
+
+	text-decoration: none !important;
+}
