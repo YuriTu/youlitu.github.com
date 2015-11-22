@@ -22,6 +22,8 @@ header>nav{
 	height: 100px;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	max-width: 1200px;
+	border: none;
 	/*padding-left: 197px;*/
 }
 #navbarIndex{
@@ -37,8 +39,10 @@ header>nav{
 
 @media(min-width: 1170px){
 	header>nav{
-		padding-left: 197px;
-		padding-right: 310px;
+		/*padding-left: 197px;*/
+		padding-right: 100px;
+		margin-right: 500px;
+
 	}
 	#navbarIndex #nav-btn>li:first-child{
 		margin-right: 130px;
@@ -148,7 +152,7 @@ div.container-fluid>#toolbar{
 /*main*/
 #main{
 	/*margin-right: -25px;*/
-	padding-left: 20px;
+	/*padding-right: -20px;*/
 }
 
 /*section*/
@@ -159,7 +163,7 @@ div.container-fluid>#toolbar{
 #section3 div.center-block,
 #section4 div.center-block
 {	
-	max-width: 1005px;
+	max-width: 980px;
 }
 
 /*各类间距*/
@@ -176,15 +180,16 @@ div.container-fluid>#toolbar{
 	max-width: 310px;
 	max-height: 195px;
 	background-color: rgb(9,133,169);
-/*	margin-top: 21px;
-	margin-left: 25px;*/
+
 }
 
+/*给所有的处于右边的最后的元素 去除mr的属性*/
+div.row div:last-child{
+	margin-right: 0 !important;
+}
 
-
-
-#section1 div.row div,
-#section2 div.row div
+#section1 div.row>div,
+#section2 div.row>div
 {
 	margin-right: 25px;
 }
@@ -194,6 +199,7 @@ div.container-fluid>#toolbar{
 #section2 div.row
 {
 	margin-bottom: 21px;
+	padding-right: -20px;
 }
 
 /*section3*/
@@ -218,7 +224,104 @@ div.container-fluid>#toolbar{
 
 }
 
+/*section1*/
+#section1 h2{
+	margin-top: 60px;
+}
+#section1 h4{
+	margin-bottom: 52px;
+}
+#section1 div.row{
+	color: #fff;
+	font-size: 27px;
+	padding: 50px auto;
+}
+#section1 div.row div p{
+	text-align: center;
+	margin-bottom: 53px;
+}
+#section1 div.row div{
+	/*padding-top: 5%;*/
+	/*padding-left: 10%;*/
+}
+#section1 div.row div.major-icon{
+	width: 53px;
+	height: 69px;
+	/*line-height: 100px;*/
+	display: block;
+	/*overflow: hidden;*/
+	background-image: url(../images/major-icon.png);
+	background-repeat: no-repeat;
+	margin-top: 50px;
 
+}
+#section1 div.row div.major-icon#law{
+	background-position: 0 0px;
+}
+#section1 div.row div.major-icon#CS{
+	background-position: -64px 0px;
+}
+#section1 div.row div.major-icon#engineer{
+	background-position: -128px 0px;
+}
+#section1 div.row div.major-icon#arch{
+	background-position: 0 -80px;
+}
+#section1 div.row div.major-icon#art{
+	background-position: -64px -80px;
+}
+#section1 div.row div.major-icon#business{
+	background-position: -128px -80px;
+}
+195-34 161 182/2/2 91
+/*section2*/
+#section2 h2{
+	margin-top: 29px;
+	margin-bottom: 87px;
+}
+#section2>div.row p{
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 80px;
+	/*line-height: 195px;*/
+}
+#section2 #check-art{
+	font-size: 18px !important;
+}
+#section2 #check-btn{
+	z-index: 99;
+	width: 200px;
+	height: 35px;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	display: block;
+	margin: 0 auto;
+
+}
+
+/*section3*/
+#section3>h2{
+	margin-top:43px;
+	margin-bottom: 12px;
+}
+#section3>h4{
+	margin-bottom: 62px;
+}
+
+#section3>hr{
+	margin-top: 55px;
+	margin-bottom: 51px;
+}
+#section3 #university{
+	margin-top: 59px;
+}
+/*section4*/
+#section4>h2{
+	margin-top: 29px;
+	margin-bottom: 48px;
+}
 /*footer*/
 footer div.row div{
 	width: 100%;
@@ -227,7 +330,7 @@ footer div.row div{
 }
 
 /*yidnogduan*/
-/*@media (min-width: 1170px){*/
+@media (min-width: 1170px){
 	#section1 div.row div,
 	#section2 div.row div
 	{
@@ -258,7 +361,7 @@ footer div.row div{
 	footer div.row div{
 		height: 130px;
 	}
-/*}*/
+}
 
 
 
@@ -314,6 +417,9 @@ div.goBackToHomePage a{
 
 #section3 div.row div{
 	background-color:red;
+}
+#section4{
+	background-color: #e3e2dc
 }
 #section4 div.row div{
 	background-color:red;

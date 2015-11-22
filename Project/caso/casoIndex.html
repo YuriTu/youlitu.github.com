@@ -39,7 +39,7 @@
 	<div class="container-fluid">
 		<header>
 			<!-- nav -->
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default center-block">
 				<div class="container-fluid">
 					<!-- brand -->
 					<div class="navbar-header">
@@ -123,7 +123,7 @@
 								</ul>
 							</button>
 						</div><!-- input-group-btn -->	
-						<input type="text" id="toolbar-input-major" 	class = "form-control" aria-label="..." placeholder = "1321321321">
+						<input type="text" id="toolbar-input-major" 	class = "form-control" aria-label="..." placeholder = "输入专业名称：">
 						<div class="input-group-btn" id="toolbar-group-2">
 							<button  class="btn btn-default dropdown-toggle" id="toolbar-btn-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type = "button">
 								选择留学目的地 <span class = "caret"></span>
@@ -151,30 +151,37 @@
 				<div class="row center-block">
 					<!-- major name 27px; -->
 					<div class="col-md-4">
+						<div class="major-icon center-block" id="law"></div>
 						<p>法学</p>
 					</div>
 					<div class="col-md-4">
+						<div class="major-icon center-block" id="CS"></div>
 						<p>计算机科学</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4" >
+						<div class="major-icon center-block" id="engineer"></div>
 						<p>工程学</p>
 					</div>
 				</div>
 				<!-- second row -->
 				<div class="row center-block">
 					<div class="col-md-4">
+						<div class="major-icon center-block" id="arch"></div>
 						<p>建筑学</p>
 					</div>
 					<div class="col-md-4">
+						<div class="major-icon center-block" id="art"></div>
 						<p>艺术设计</p>
 					</div>
 					<div class="col-md-4">
+						<div class="major-icon center-block" id="business"></div>
 						<p>商科管理</p>
 					</div>
 				</div>
 			</div>
 			<!-- position -->
 			<div class="container-fluid" id="section2">
+				<img src="images/caret-down.png" class="img-responsive center-block">
 				<h2 class="text-center">热门留学目的地</h2>
 				<div class="row center-block">
 					<!-- position name 24px -->
@@ -221,13 +228,14 @@
 						<p>加拿大</p>
 					</div>
 					<div class="col-md-4">
-						<p >不确定该到哪里留学？</p>
-						<button class="btn btn-default">我们来帮你选！</button>
+						<p id="check-art" >不确定该到哪里留学？</p>
+						<button class="btn btn-succee" id="check-btn">我们来帮你选！</button>
 					</div>
 				</div>
 			</div>
 			<!-- ask -->
 			<div class="container-fluid" id="section3">
+				<img src="images/caret-down-wri.png" class="img-responsive center-block">
 				<!-- 41px -->
 				<h2 class="text-center">留学相关的重要资讯和指南</h2>
 				<h4 class="text-center"><a  href="#" >浏览所有文章</a></h4>
@@ -240,14 +248,20 @@
 					<div class="col-md-6"></div>
 					<div class="col-md-6"></div>
 				</div>
-				<!-- collage -->
 				<!-- 分割线 -->
+				<hr>
+
+
+				<!-- collage -->
+				
 				<h2 class="text-center">你知道这所大学吗？</h2>
-				<div class="row center-block" >
+				<div class="row center-block" id="university" >
 					<div class="col-md-12"></div>;
 				</div>
 			</div>			
 			<div class="container-fluid" id="section4">
+				<img src="images/caret-down.png" class="img-responsive center-block">
+				<h2 class="text-center">你还可以做什么</h2>
 				<!-- dosonething -->
 				<div class="row center-block" >
 					<div class="col-md-6">查看大学排名</div>
@@ -262,9 +276,15 @@
 					<div class="col-md-6">下载招生简章</div>
 				</div>
 			</div>
-			<!-- friend -->		
+			<!-- friend -->	
+			<div class="container-fluid" id="section5">
+				<img src="images/caret-down-gray.png" class="img-responsive center-block">
+				<div class="row">
+					<div class="col-md-6"></div>
+				</div>
+			</div>
 		</div><!-- end of main -->
-		
+			
 		<footer>
 			<div class="container">
 				<div class="row center-block" >
