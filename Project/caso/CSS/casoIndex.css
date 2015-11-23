@@ -273,9 +273,9 @@ div.row div:last-child{
 #section1 div.row div.major-icon#business{
 	background-position: -128px -80px;
 }
-195-34 161 182/2/2 91
+/*195-34 161 182/2/2 91*/
 /*section2*/
-#section2 h2{
+#section2>h2{
 	margin-top: 29px;
 	margin-bottom: 87px;
 }
