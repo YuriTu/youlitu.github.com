@@ -1,8 +1,3 @@
-/*color list*/
-/*black #000;
-
-
-*/
 /*typography*/
 
 /*casoIndex*/
@@ -31,13 +26,8 @@ header>nav{
 	border: none;
 	/*padding-left: 197px;*/
 }
-/*头顶导航栏的奇葩距离*/
 #navbarIndex{
 	max-height: 50px;
-	max-width: 780px;
-
-	float: right;
-	padding: 0;
 }
 #navbarIndex ul.navbar-right{
 	margin-left: 0px !important;
@@ -46,77 +36,61 @@ header>nav{
 	padding-top: 10px;
 }
 
-/*响应式再改动的奇葩距离*/
+
 @media(min-width: 1170px){
 	header>nav{
 		/*padding-left: 197px;*/
+		padding-right: 100px;
 		margin-right: 500px;
-		max-width: 980px;
 
 	}
-	header>nav>div.container{
-		padding: 0;
-		max-width: 980px;
-	}
-	#navbarIndex{
-		width: 780px;
-	}
-	#navbarIndex #nav-btn{
-		margin-left: 50px;
-	}
 	#navbarIndex #nav-btn>li:first-child{
-		margin-right: 100px;
+		margin-right: 130px;
 	}
 	#navbarIndex #nav-btn>li:last-child{
-		margin-left:100px;
-		/*margin-right: 77px;*/
+		margin-left: 80px;
 	}
 
 
 }
 
 
-/*中间的查找栏目*/
+
 /*toolbar*/
 #toolbar>h1{
 	/*typography*/
 	margin-top: 8%;
 	margin-bottom: 45px;
+
 	/*layeout*/
 	font-weight: bold;
-	text-shadow:6px 3px 8px rgba(0,0,0,0.63);
+	text-shadow:3px 3px 8px rgb(150,150,150);
 }
 
 
 
 div.container-fluid>#toolbar{
-	/*background-image: url(../images/navBGSm-1.jpg);*/
+	background-image: url(../images/navBGSm.jpg) !important;
 	max-height: 400px;
 	max-width: 1920px;
 	width: 100%;
 	height: 400px;
-}
-/*背景图要求 1920*400*/
-#toolbar>#navBG{
-	z-index: -1;
 
-	position: absolute;
-	height: 517px;
-	width: 1920px;
-	background-image: url(../images/navBGSm-1.jpg);
-	/*float: left;*/
 }
-
-/*保证居中*/
 #toolbar div.center-block{
+	/*margin: 0 auto !important;*/
+	/*width: 980px;*/
 	max-width: 980px;
+	/*left: 25%;*/
+	/*top: 50%;*/
+	/*height: 43px;*/
 }
 #toolbar-group{
 	max-width: 960px;
 	/*width: 960px;*/
 	/*height: 43px;*/
-	border-radius: 8px;
-	background-color: rgba(0,0,0,0.58);
+	border-radius: 10px;
+	background-color: rgba(80,80,80,0.6);
 	border: 10px solid rgba(50,50,50,0.1);
 	text-align: left;
 }
@@ -175,6 +149,11 @@ div.container-fluid>#toolbar{
 
 
 
+/*main*/
+#main{
+	/*margin-right: -25px;*/
+	/*padding-right: -20px;*/
+}
 
 /*section*/
 
@@ -195,18 +174,15 @@ div.container-fluid>#toolbar{
 	/*max-width: 980px;*/
 }
 
-#section1>div.row div
+#section1>div.row div,
+#section2>div.row div
 {
 	max-width: 310px;
 	max-height: 195px;
-	background-color: transparent;
+	background-color: rgb(9,133,169);
 
 }
-#section2>div.row div{
-	max-width: 310px;
-	max-height: 195px;
-	background-color: #000;
-}
+
 /*给所有的处于右边的最后的元素 去除mr的属性*/
 div.row div:last-child{
 	margin-right: 0 !important;
