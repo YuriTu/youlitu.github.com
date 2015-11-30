@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="textcss.css">
+
+</head>
+<body>
+	<div class="con clear">
+
+		<ol class="ali">
+			<li><a href="#">1</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">1</a></li>
+		</ol>
+	</div>
+	
+	<script type="text/javascript">
+
+getRating(8);
+function getRating(rating) {
+    if(rating > 5 || rating < 0) throw new Error('数字不在范围内');
+    return '★★★★★☆☆☆☆☆'.substring(5 - rating, 10 - rating );
+}
+	</script>
+</body>
+</html>

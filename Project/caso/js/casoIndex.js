@@ -20,6 +20,7 @@ $(function () {
 		var $engineer = $("#engineer").parent("div.col-md-4");
 		$engineer.css('background-image', 'url(./images/major-icon/major-icon-3.jpg)');
 		var $arch = $("#arch").parent("div.col-md-4");
+		// row2
 		$arch.css('background-image', 'url(./images/major-icon/major-icon-4.jpg)');
 		var $art = $("#art").parent("div.col-md-4");
 		$art.css('background-image', 'url(./images/major-icon/major-icon-5.jpg)');
@@ -32,8 +33,7 @@ $(function () {
 
 	function navBGChange () {
 		var navBGNum = 2;
-		setInterval(function () {
-			
+		setInterval(function () {			
 			$("#navBG")
 				.animate({opacity:0},500,function () {
 					$(this)
@@ -51,6 +51,6 @@ $(function () {
 
 
 
-
+// end of ready function
 })
 
