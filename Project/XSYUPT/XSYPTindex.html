@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- [if lt IE 7]><html class = "no-js lt-ie9 lt-ie8 lt-ie7"><![endif] -->
+<!-- [if IE 7]><html class = "no-js lt-ie9 lt-ie8"><![endif] -->
+<!-- [if IE 8]><html class = "no-js lt-ie9"><![endif] -->
+<!-- [if gt IE 8]><html class = "no-js"><![endif] -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name = "description" content = "">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- reset -->
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/reset.css"> -->
+	<!-- 浏览器版本提示 -->
+<!-- 	[if lt IE 7 ]>
+	<p class = "chromeframe">You are using an<strong>outdated</strong>browser...</p>
+	<p class = "chromeframe">浏览器太旧啦~</p> -->
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"> -->
+	<!-- <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+
+	<!-- flat-ui -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/basic.css">
+	<!-- ie9提示 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>pt site</title>
+
+</head>
+<body>
+	<!-- 头部信息 -->
+	<header>
+	<!-- logo & user info -->
+		
+		<div class="container" id="navbar">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#headNav-collapse" aria-expanded="false">
+							<span class="sr-only">toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand">Share@XSYU</a>
+					</div><!-- end of navbar-header -->
+					<!-- collect the nav links,forms and other content for toggling -->
+					<div class="collapse navbar-collapse" id="haedNav-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">主页<span class = "sr-only">(current)</span></a></li>
+							<li><a href="#">论坛</a></li>
+							<li><a href="#">种子</a></li>
+							<!-- search -->
+							<form action="#" class="navbar-form navbar-left" role="search">
+								<div class="from-group">
+									<input type="text" class="from-control" placeholder = "Search">
+									<button type="submit" class="btn btn-default ">查找submit</button>
+								</div>							
+							</form>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发布<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">字幕</a></li>
+									<li><a href="#">发布</a></li>
+									<li class="divider" role= "separator"></li>
+									<li><a href="#">候选</a></li>
+								</ul>
+							</li>
+							<li><a href="#">排行榜</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">帮助<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">设置</a></li>
+									<li><a href="#">日志</a></li>
+									<li><a href="#">规则</a></li>
+									<li class="divider" role="separator"></li>
+									<li><a href="#">常见问题</a></li>
+									<li><a href="#">管理组</a></li>
+								</ul>
+							</li>
+							<li><a href="#">在线电视</a></li>
+						</ul>
+					</div>
+
+				</div><!--  end of container-fluid -->
+			</nav>	
+		</div>
+		<div class="userInfo">
+			
+		</div>
+			
+
+	</header>
+	<!-- carousel -->
+	<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+		<!-- pointer -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-generic" data-slide-slide-to="0"></li>
+			<li data-target="#carousel-generic" data-slide-slide-to="1"></li>
+			<li data-target="#carousel-generic" data-slide-slide-to="2"></li>
+		</ol>
+		<!-- picture\ wrapper for slides -->
+		<div class="carousel-inner" role = "listbox">
+			<div class="item active">
+				<img src="images/carousel-1.jpg" alt="">
+				<div class="carousel-caption">
+					<h3>first slide label</h3>
+					<p>to delight some info</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/carousel-2.jpg" alt="">
+				<div class="carousel-caption">
+					<h3>second slide label</h3>
+					<p>to delight some info</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/carousel-3.jpg" alt="">
+				<div class="carousel-caption">
+					<h3>third slide label</h3>
+					<p>to delight some info</p>
+				</div>
+			</div>
+		</div><!--  end of carousel-inner -->
+
+		<!-- controls -->
+		<a href="#carousel-generic" class="left carousel-control" role = "button" data-slide="prev">
+			<soab class="glyphicon-chevron-left" aria-hidden="true"></soab>
+			<span class="sr-only">previous</span>
+		</a>
+		<a href="#carousel-generic" class="right carousel-control" role = "button" data-slide="next">
+			<soab class="glyphicon-chevron-right" aria-hidden="true"></soab>
+			<span class="sr-only">previous</span>
+		</a>
+
+	</div><!-- end of carousel-generic -->
+	<!-- 自适应	 -->
+	<div class="container container-nonPadding">
+
+		<div id="main">
+
+			<!-- main info -->
+			<div class="info container-fluid">
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="container-fluid">
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-success">
+										<div class="panel-heading">panel-12</div>
+										<div class="panel-body">
+											这里的组件是自适应的，根据内容变化长度 test text test text test text test test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text  text test text test text test text test text test text test text test text test text 
+										</div>
+									</div>
+								</div>					
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-success">
+										<div class="panel-heading">panel-12</div>
+										<div class="panel-body">
+											test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text 
+										</div>
+									</div>
+								</div>					
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-success">
+										<div class="panel-heading">panel-12</div>
+										<div class="panel-body">
+											test text test text test text test text test text test text test text test text test text test text 
+										</div>
+									</div>
+								</div>					
+							</div>
+
+						</div><!-- end of container -->
+					</div><!-- end of left  -->
+
+					<div class="col-md-6">
+						<div class="container-fluid">
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-success">
+										<div class="panel-heading">panel-12</div>
+										<div class="panel-body">
+											test text test text test text test text test text test text test text test texttest text test text test text test text test text test text test text test text 
+										</div>
+									</div>
+								</div>					
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-success">
+										<div class="panel-heading">panel-12</div>
+										<div class="panel-body">
+											test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text 
+										</div>
+									</div>
+								</div>					
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-success">
+										<div class="panel-heading">panel-12</div>
+										<div class="panel-body">
+											test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text 
+										</div>
+									</div>
+								</div>					
+							</div>
+
+						</div><!-- end of container  -->
+					</div><!-- end of right  -->
+
+
+				</div>	
+				
+
+				
+
+			</div><!--  end of info -->
+		</div><!-- end of main -->
+	</div> <!-- end of container -->
+	
+
+	<!-- JQ文件 -->
+	// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
+	<!--// <script>window.jQuery || document.write('<script type="text/javascript" src = "javascripts/librarys/jquery-2.1.4.min.js"><\/script>')</script>-->
+	<!-- // <script type="text/javascript" src = "javascripts/jquery-2.1.4.min.js"></script> -->
+
+
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- // <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" ></script> -->
+	<!-- // <script type="text/javascript" src ="javascripts/Bootstrap.min.js"></script> -->
+</body>
+</html>

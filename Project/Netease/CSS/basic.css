@@ -1,14 +1,134 @@
+/*
+color list
+@colordef #39a030 green
+
+2
+*/
+/*最一般的规则 需要所有的元素继承的样式 */
 /*@group general styles*/
 span{
-	color: #;
+	color: ;
 	font-size: 3px;
 }
+body{
+	margin: 0;
+	padding: 0;	
+	font-size: 14px;
+	font-family: "Microsoft YaHei","Hiragino Sans GB"
+}
+header{
+	width: 1616px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
 
+
+
+/*color*/
+.NetaseGreen{
+	color: #39a030;
+}
+
+/*font*/
+.logoHeader{
+	font-family: "Gill Sans MT";
+	font-size: 2em;
+	font-weight: bold;
+}
+.logoWords{
+	font-family: "Hiragino Sans GB";
+	font-size: 1.6em;
+}
+.lead{
+	font-family: "SimSun";
+}
+
+/*辅助 表单
+通知和错误
+一致的条目*/
 /*@group helper styles*/
+.btn{
+	display: inline-block;
+	padding: 4px 9px;
+	font-size: 12px;
+	margin-bottom: 0;	
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	    touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 2px;
+}
+.btn-default{
+	color: #fff;
+	background-color: #39a030;
+	border:none;
+}
 
 
+/*结构 一般类 表单 错误信息 */
 /*@group page structure*/
 
-/*@group page components*/
+/*header*/
+div.logoIntro,div.logo,div.weibo{
+	display: inline-block;
+	/*height: 20px;*/
+}
+nav>div.logoIntro{
+	padding-top: 30px;
+	padding-bottom: 37px;
+}
+nav>div#product{
+	display: inline-block;
+	
+}
+/*nav{
+	box-sizing: border-box;
+	height: 90px;
+	width: 100%;
+	padding: 35px
 
-/*@group overrides*/
+}*/
+
+
+
+
+/*每个页面的特殊样式*/
+/*@group page components*/
+/*header*/
+
+nav>div.logo>span.logoHeader:after{
+	content: "|";
+	margin-left: 5px;
+}
+
+div.weibo>button{
+	
+}
+div.weibo>span.lead{
+	/*12px;*/
+	font-size: 0.85em;
+}
+div#product>a{
+	/*16px;*/
+	font-family: "Hiragino Sans GB";
+	font-size: 1.1428em;
+}
+header>div.carouse1>img{
+	width: 1616px;
+	max-width: 1616px;
+}
+
+/*@group overrides

@@ -1,88 +1,75 @@
-	.alert{
-		background-color: #000;
-		opacity: 0.8;
-		/*ie*/
-		filter:alpha(opacity = 80);
-	}
-
-	img{
-		float: left;	
-		max-width: 300px;
-	}
-	p{
-		float: right;
-	}
-	div.con{
-		/*background-color: red;*/
-	}
-
-	.clear:after{
-		content: ".";
-		/*不希望占据页面*/
-		height: 0;
-		/*不需要显示*/
-		visibility: hidden;
-		visibility: hidden;
-		/*被清理的元素【div.con】 在他们的margin-top 添加了空间*/
-		/*如果是行内 则不足以清除*/
-		display: block;
-
-		clear: both;
-
-	}
-	.shadow{
-		/*x y 半径 color*/
-		-webkit-box-shadow: 3px 3px 6px #666;
-		box-shadow: 3px 3px 6px #666;
-	}
-	.alert{
-		background-color: #000;
-		opacity: 0.8;
-		/*ie*/
-		filter:alpha(opacity = 80);
-	}
-
-a:visited {
-	/*text-decoration: none;*/
-	/*border-bottom: 1px dotted #000;*/
-	padding-right: 20px;
-	background-image: url(img/out.jpg) no-repeat right middle;
-}
-
-a:hover,a:focus,a:active {
-	border-bottom-style: solid;
-
-}
-
-/*a{
-	display: block;
-	width: 6.6em;	
-	line-height: 1.4;
-	text-align: center;
-	text-decoration: none;
-	border: 1px solid #ff6300;
-	background-color: #8cca12;
-	color: #fff;
-}*/
-
-html{
-	filter:expression(document.execCommand("BackgroundImageCache",false,true));
-}
-
 ul,ol{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-
 }
-li{
-	background: url(img/checkOk.jpg) no-repeat 0 50%;
-	padding-left: 30px;
-}
-
-ol.ali li{
-	float: left;
-	margin-right: 0.6em;
-
+a{
+	text-decoration: none;
+	
 }
 
+div.img>img{
+	/*width: 300px;*/
+	height: 500px;
+
+}
+div.img{
+	/*width: 300px;*/
+	height: 500px;
+	/*为了让绝对定位找到位置*/
+	position: relative; 
+}
+
+
+
+/*div.img a{
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 60px;
+	文本缩进 使文本影藏
+	text-indent: -1000em;
+}*/
+
+div.img a{
+	position: absolute;
+	display: block;
+	background-image: url(img/shim.png);
+	color: #fff;
+	border:1px solid transparent;
+	
+}
+
+
+div.img .theone a{
+	top: 50px;
+	left: 80px;
+}
+div.img .thetwo a{
+	top: 100px;
+	left: 150px;
+}
+div.img .thethree a{
+	top: 50px;
+	left: 150px;
+}
+div.img .thefour a{
+	top: 50px;
+	left: 380px;
+}
+div.img a:hover,
+div.img a:focus
+{
+	border:3px solid #fff;
+}
+
+/*ie10一下解决方法
+div.img a{
+	position: absolute;
+	display: block;
+	设置 transparent 无效
+	background-image: url(img/透明的图片.png);
+	width: 80px;
+	height: 50px;
+	text-indent: -9999px;	
+}*/

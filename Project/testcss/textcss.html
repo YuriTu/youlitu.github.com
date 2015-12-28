@@ -7,19 +7,52 @@
 
 </head>
 <body>
-	<div class="con clear">
-
-		<ol class="ali">
-			<li><a href="#">1</a></li>
-			<li><a href="#">1</a></li>
-			<li><a href="#">1</a></li>
-			<li><a href="#">1</a></li>
-		</ol>
-	</div>
 	
+	<div class="img">
+		<img src="img/photo-2.jpg" alt="photo">
+		<ul>
+			<li class="theone">
+				<a href="#" title="one">the one
+					<span class="outer">
+						<span class="inter">
+							<span class="note">the one introduce</span>
+						</span>
+					</span>
+				</a>
+			</li>
+			<li class="thetwo">
+				<a href="#" title="two">the two
+				<span class="outer">
+					<span class="inter">
+						<span class="note">the two introduce</span>
+					</span>
+				</span>
+				</a>
+			</li>
+			<li class="thethree">
+				<a href="#" title="three">the three
+				<span class="outer">
+					<span class="inter">
+						<span class="note">the one introduce</span>
+					</span>
+				</span>
+				</a>
+			</li>
+			<li class="thefour">
+				<a href="#" title="four">the four
+				<span class="outer">
+					<span class="inter">
+						<span class="note">the one introduce</span>
+					</span>
+				</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
 	<script type="text/javascript">
 
-getRating(8);
+getRating(2);
 function getRating(rating) {
     if(rating > 5 || rating < 0) throw new Error('数字不在范围内');
     return '★★★★★☆☆☆☆☆'.substring(5 - rating, 10 - rating );

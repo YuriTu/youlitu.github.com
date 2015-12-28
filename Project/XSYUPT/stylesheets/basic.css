@@ -1,0 +1,58 @@
+/*
+color list
+@colordef #39a030 green
+
+
+*/
+/*最一般的规则 需要所有的元素继承的样式 */
+/*@group general styles*/
+
+/*全局*/
+body{
+	padding-top: 70px;
+}
+
+.container-nonPadding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+
+/*color*/
+
+
+/*font*/
+
+
+
+/*辅助 表单
+通知和错误
+一致的条目*/
+/*@group helper styles*/
+
+
+/*结构 一般类 表单 错误信息 */
+/*@group page structure*/
+
+/*header*/
+
+/*nav{
+	box-sizing: border-box;
+	height: 90px;
+	width: 100%;
+	padding: 35px
+
+}*/
+
+
+
+
+/*每个页面的特殊样式*/
+/*@group page components*/
+
+/*header*/
+
+
+
+/*@group overrides
