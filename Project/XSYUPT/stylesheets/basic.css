@@ -9,7 +9,8 @@ color list
 
 /*全局*/
 body{
-	padding-top: 70px;
+	padding-top: 50px;
+	background-color: #CCFFFF;
 }
 
 .container-nonPadding{
@@ -52,7 +53,12 @@ body{
 /*@group page components*/
 
 /*header*/
-
-
+#carousel-generic{
+	margin-bottom: 20px;
+}
+.panel-success>.panel-heading{
+	background-color: #34495e;
+	color: #fff;
+}
 
 /*@group overrides

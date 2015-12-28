@@ -23,6 +23,7 @@
 
 	<!-- flat-ui -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.css">
+	<!-- basic -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/basic.css">
 	<!-- ie9提示 -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -48,7 +49,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="#" class="navbar-brand">Share@XSYU</a>
+						<a href="#" class="navbar-brand">Share@XSYU </a>
 					</div><!-- end of navbar-header -->
 					<!-- collect the nav links,forms and other content for toggling -->
 					<div class="collapse navbar-collapse" id="haedNav-collapse">
@@ -59,7 +60,7 @@
 							<!-- search -->
 							<form action="#" class="navbar-form navbar-left" role="search">
 								<div class="from-group">
-									<input type="text" class="from-control" placeholder = "Search">
+									<input type="text" class="from-control" placeholder = "分享|交流|传递">
 									<button type="submit" class="btn btn-default ">查找submit</button>
 								</div>							
 							</form>
@@ -84,14 +85,15 @@
 									<li><a href="#">管理组</a></li>
 								</ul>
 							</li>
-							<li><a href="#">在线电视</a></li>
+							<li><a href="#">看电视</a></li>
+							<li><a href=""><span class="glyphicon glyphicon-user "></span></a></li>	
 						</ul>
 					</div>
 
 				</div><!--  end of container-fluid -->
 			</nav>	
 		</div>
-		<div class="userInfo"></div>
+		<!-- <div class="userInfo">用户信息这边，暂时没想好怎么做比较好看 要么在导航栏设置个user图标 要么照旧</div> -->
 	</header>
 	<!-- carousel -->
 	<div id="carousel-generic" class="carousel slide" data-ride="carousel">
@@ -128,11 +130,11 @@
 
 		<!-- controls -->
 		<a href="#carousel-generic" class="left carousel-control" role = "button" data-slide="prev">
-			<soab class="glyphicon-chevron-left" aria-hidden="true"></soab>
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			<span class="sr-only">previous</span>
 		</a>
 		<a href="#carousel-generic" class="right carousel-control" role = "button" data-slide="next">
-			<soab class="glyphicon-chevron-right" aria-hidden="true"></soab>
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">previous</span>
 		</a>
 
@@ -148,13 +150,26 @@
 
 					<div class="col-md-6">
 						<div class="container-fluid">
-
+							<!-- 第一行 第一列、 -->
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-success">
-										<div class="panel-heading">panel-12</div>
+										<div class="panel-heading">最新消息</div>
 										<div class="panel-body">
-											这里的组件是自适应的，根据内容变化长度 test text test text test text test test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text  text test text test text test text test text test text test text test text test text 
+											这里的组件是自适应的，根据内容变化长度 里面可以嵌套 加啥都行
+										</div>
+									</div>
+								</div>					
+							</div>
+							<!-- 第二行 第一列 -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-success">
+										<div class="panel-heading">趣味盒</div>
+										<div class="panel-body">
+											<span>后台数据</span>
+											<p>1、“同桌你看夕阳西下好美哦。” “说人话！”“杂TM还不放学！！！”<br>2、上小学三年级时我总欺负同桌，直到有天她老爸来给她送伞，看她老爸光头纹身，一脸的横肉！我问她：“你老爸干嘛的？”她说贩毒的！从那以后再也不敢欺负她了！直到有一天，我看到她爸在街上卖老鼠药。。。</p>
+											<p><span>data</span>个用户，觉得很赞...<button class="btn btn-primary btn-embossed" type="button">good</button><button class="btn btn-inverse btn-embossed"  type="button">bad</button></p>
 										</div>
 									</div>
 								</div>					
@@ -163,20 +178,9 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-success">
-										<div class="panel-heading">panel-12</div>
+										<div class="panel-heading">群聊区</div>
 										<div class="panel-body">
-											test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text 
-										</div>
-									</div>
-								</div>					
-							</div>
-
-							<div class="row">
-								<div class="col-md-12">
-									<div class="panel panel-success">
-										<div class="panel-heading">panel-12</div>
-										<div class="panel-body">
-											test text test text test text test text test text test text test text test text test text test text 
+											data from server data from server data from server data from server 
 										</div>
 									</div>
 								</div>					
@@ -184,16 +188,22 @@
 
 						</div><!-- end of container -->
 					</div><!-- end of left  -->
-
+					<!-- 第二列 -->
 					<div class="col-md-6">
 						<div class="container-fluid">
 
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-success">
-										<div class="panel-heading">panel-12</div>
+										<div class="panel-heading">最近上传</div>
 										<div class="panel-body">
-											test text test text test text test text test text test text test text test texttest text test text test text test text test text test text test text test text 
+											<ul class="list-group">
+												<li class="list-group-item">data from server</li>
+												<li class="list-group-item">data from server</li>
+												<li class="list-group-item">data from server</li>
+												<li class="list-group-item">data from server</li>
+												<li class="list-group-item">data from server</li>
+											</ul>
 										</div>
 									</div>
 								</div>					
@@ -202,20 +212,61 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-success">
-										<div class="panel-heading">panel-12</div>
+										<div class="panel-heading">投票</div>
 										<div class="panel-body">
-											test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text 
+											<form action="#">
+												<div class="checkbox">
+													<label for="#" class="radio">
+														<span class="icon"></span>
+														<span class="icon-to-fade"></span>
+														<input type="radio" name="retain" id="retainRadio1" value="option1">保种是什么鬼_(:з」∠)_ 
+													</label>
+													<label for="#" class="radio">
+														<span class="icon"></span>
+														<span class="icon-to-fade"></span>
+														<input type="radio" name="retain" id="retainRadio1" value="option1">保种是什么鬼_(:з」∠)_ 
+													</label>
+													<label for="#" class="radio">
+														<span class="icon"></span>
+														<span class="icon-to-fade"></span>
+														<input type="radio" name="retain" id="retainRadio1" value="option1">保种是什么鬼_(:з」∠)_ 
+													</label>
+													<br>
+													<div class="progress">
+													  <div class="progress-bar" style="width: 20%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">20%</div>
+													  <div class="progress-bar progress-bar-warning" style="width: 10%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">10%</div>
+													  <div class="progress-bar progress-bar-danger" style="width: 10%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">10%</div>
+													  <div class="progress-bar progress-bar-success" style="width: 10%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">10%</div>
+													  <div class="progress-bar progress-bar-info" style="width: 10%;" role="progressbar" aria-valuemin="0" aria-valuemax="100">10%</div>
+													</div>
+												</div>
+											</form>
 										</div>
-									</div>
+									</div> <!-- end of panel -->
 								</div>					
-							</div>
-
+							</div>  <!-- end of row -->
+							<!-- 第三行 第二列 -->
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-success">
 										<div class="panel-heading">panel-12</div>
 										<div class="panel-body">
-											test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text test text 
+											<table class="table table-bordered table-striped">
+												<tbody>
+													<tr>
+														<th>今日用户</th>
+														<td>data</td>
+														<th>本周访问用户</th>
+														<td>data</td>
+													</tr>
+													<tr>
+														<th>注册用户</th>
+														<td>data</td>
+														<th>注册用户</th>
+														<td>data</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
 									</div>
 								</div>					
@@ -227,6 +278,64 @@
 
 				</div>	
 				
+				<div class="row">
+					<div class="container-fluid">
+						<div class="panel panel-success">
+							<div class="panel-heading">大家下载的资源会保种多久？</div>
+							<div class="panel-body">
+								这里的组件是自适应的，根据内容变化长度 里面可以嵌套 加啥都行
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="panel panel-success">
+							<div class="panel-heading">server</div>
+							<div class="panel-body">
+								<table class="table  table-striped table-hover">
+									<tbody>
+										<caption>data</caption>
+										<tr>
+											<th>今日用户</th>
+											<td>data</td>
+											<th>本周访问用户</th>
+											<td>data</td>
+										</tr>
+										<tr>
+											<th>注册用户</th>
+											<td>data</td>
+											<th>注册用户</th>
+											<td>data</td>
+										</tr>
+										<tr>
+											<th>今日用户</th>
+											<td>data</td>
+											<th>本周访问用户</th>
+											<td>data</td>
+										</tr>
+										<tr>
+											<th>注册用户</th>
+											<td>data</td>
+											<th>注册用户</th>
+											<td>data</td>
+										</tr>
+										<tr>
+											<th>今日用户</th>
+											<td>data</td>
+											<th>本周访问用户</th>
+											<td>data</td>
+										</tr>
+										<tr>
+											<th>注册用户</th>
+											<td>data</td>
+											<th>注册用户</th>
+											<td>data</td>
+										</tr>
+									</tbody>
+								</table>
+							</div><!-- end od panel-body -->
+						</div><!-- end of panel -->
+					</div><!-- end of contaner-fluid -->
+				</div><!-- end of row -->
 
 				
 
@@ -276,15 +385,16 @@
 	</footer>
 
 	<!-- JQ文件 -->
-	// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
 	<!--// <script>window.jQuery || document.write('<script type="text/javascript" src = "javascripts/librarys/jquery-2.1.4.min.js"><\/script>')</script>-->
 	<!-- // <script type="text/javascript" src = "javascripts/jquery-2.1.4.min.js"></script> -->
 
 
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    // <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- // <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" ></script> -->
 	<!-- // <script type="text/javascript" src ="javascripts/Bootstrap.min.js"></script> -->
+	<script type="text/javascript" src=""></script>
 </body>
 </html>
