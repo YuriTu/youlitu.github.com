@@ -21,8 +21,12 @@
 	<!-- <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
 
+
 	<!-- flat-ui -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css">
+	<!-- FA ICON -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 	<!-- basic -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/basic.css">
 	<!-- ie9提示 -->
@@ -59,8 +63,8 @@
 							<li><a href="XSYPTtorrent.html">种子</a></li>
 							<!-- search -->
 							<form action="#" class="navbar-form navbar-left" role="search">
-								<div class="from-group">
-									<input type="text" class="from-control" placeholder = "分享|交流|传递">
+								<div class="form-group">
+									<input type="text" placeholder = "分享|交流|传递">
 									<button type="submit" class="btn btn-default ">查找submit</button>
 								</div>							
 							</form>
@@ -138,7 +142,6 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">previous</span>
 		</a>
-
 	</div><!-- end of carousel-generic -->
 
 	<!-- 自适应	 -->
@@ -154,27 +157,119 @@
 								Tracker服务器的URL是: http://pt.xsyu.edu.cn/announce.php
 							</div>
 							<div class="panel-body">
-								<from class="from-horizontal">
+								<form class="form-horizontal">
 									<!-- file select -->
-									<div class="from-group">
-										<label for="inputTorrentFile" class="col-sm-2 control-label">torrent file</label>
-										<div class="col-sm-10">
-											<input type="file" id="inputTorrentFile">
+									<div class="form-group">
+										<label for="inputTorrentFile" class="col-sm-1 control-label">种子文件</label>
+										<div class="col-sm-11">
+											<input type="file" id="inputTorrentFile" class="form-control">
 										</div>
-										<label for="titleTorrent" class="col-sm-2 control-label">title</label>
+									</div>									
+									<!--main heading-->
+									<div class="form-group">
+										<label for="mainHeadingTorrent" class="col-sm-1 control-label">种子标题</label>
+										<div class="col-sm-11">
+											<input type="text" id="mainHeadingTorrent" class="form-control" placeholder = "若不填将使用种子文件名。要求规范填写，如银翼杀手 Blade Runner 1982 Final Cut 720p HDDVD DTS x264-ESiR">
+											<p class="help-block">若不填将使用种子文件名。<b>要求规范填写</b>，如<i>银翼杀手 Blade Runner 1982 Final Cut 720p HDDVD DTS x264-ESiR</i></p>
+										</div>										
 									</div>
-									<!-- title-->
-									<div class="from-group">
-										<label for="titleTorrent" class="col-sm-2 control-label">title</label>
+									<!-- subheading -->
+									<div class="form-group">
+										<label for="subHeadingTorrent" class="col-sm-1 control-label">副标题</label>
+										<div class="col-sm-11">
+											<input type="text" id="subHeading" class="form-control"
+											 placeholder="(来自IMDb的链接。如电影The Dark Knight的链接是http://www.imdb.com/title/tt0468569/)"
+											>
+											<p class="help-block">(将在种子页面种子标题下显示。如<i>720p @ 4615 kbps - DTS 5.1 @ 1536 kbps</i>)</p>
+										</div>										
 									</div>
-								</from>
+									<!-- introduction -->
+									<div class="form-group">
+
+										<label for="introTorrent" class="col-sm-1 control-label">文件简介</label>
+										<div class="col-sm-11">
+											<!-- toolbar -->											
+											<div class="btn-toolbar" role = "toolbar">											
+												<!-- text toolbar -->
+												<div class="btn-group" role = "group" aria-label="toolbar">
+													<!-- bold -->
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="icon-bold" aria-hidden = "true"></i>
+													</button>
+													<!-- Italic -->
+													<button type="button" class="btn btn-default" aria-label="Italic">
+													  <i class="icon-italic" aria-hidden = "true"></i>
+													</button>
+													<!-- underline -->
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="icon-underline" aria-hidden = "true"></i>
+													</button>
+												</div><!-- end of text toolbar -->
+												<!-- align toolbar -->
+												<div class="btn-group" role = "group" aria-label = "toolabr">
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class=" icon-align-left" aria-hidden = "true"></i>
+													</button>
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="icon-align-center" aria-hidden = "true"></i>
+													</button>
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="icon-align-right" aria-hidden = "true"></i>
+													</button>
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="icon-align-justify" aria-hidden = "true"></i>
+													</button>
+												</div><!-- end align -->
+												<!-- font toolbar -->
+												<!-- caution!not FA icon -->
+												<div class="btn-group" role = "group" aria-label = "toolabr">
+													<!-- font family-->
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="glyphicon glyphicon-font" aria-hidden = "true"></i>
+													</button>
+													<!-- font-size -->
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="glyphicon glyphicon-text-size" aria-hidden = "true"></i>
+													</button>
+													<!-- font color -->
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="glyphicon glyphicon-text-color" aria-hidden = "true"></i>
+													</button>
+													<!-- font background -->
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="glyphicon glyphicon-text-background" aria-hidden = "true"></i>
+													</button>
+												</div><!-- end font toolbar-->
+												<!-- picture&list toolbar -->
+												<div class="btn-group" role = "group" aria-label="toolbar">
+													<!-- bold -->
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="icon-picture" aria-hidden = "true"></i>
+													</button>
+													<!-- Italic -->
+													<button type="button" class="btn btn-default" aria-label="Italic">
+													  <i class="icon-list-ul" aria-hidden = "true"></i>
+													</button>
+													<!-- underline -->
+													<button type="button" class="btn btn-default" aria-label="Bold">
+														<i class="icon-list-ol" aria-hidden = "true"></i>
+													</button>
+												</div><!-- end of text toolbar -->
+
+											</div><!-- end of toolbar -->
+											
+											<textarea name="introTorrent" id="introTorrent" cols="100" rows="10" class="form-control">
+												
+											</textarea>
+										</div><!-- end of textarea pael -->
+									</div><!-- end of form group -->
+
+								</form>
+
 							</div><!-- end od panel-body -->
 						</div><!-- end of panel -->
 					</div><!-- end of contaner-fluid -->
 				</div><!-- end of row -->
-
-				
-
 			</div><!--  end of info -->
 		</div><!-- end of main -->
 	</div> <!-- end of container -->
