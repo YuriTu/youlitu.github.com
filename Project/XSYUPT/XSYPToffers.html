@@ -32,7 +32,7 @@
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<title>pt site_字幕</title>
+	<title>pt site_候选</title>
 
 </head>
 <body>
@@ -54,20 +54,20 @@
 					<!-- collect the nav links,forms and other content for toggling -->
 					<div class="collapse navbar-collapse" id="haedNav-collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="XSYPTindex.html">主页<span class = "sr-only">(current)</span></a></li>
+							<li class="active"><a href="XSYPTindex.html">主页<span class = "sr-only">(current)</span></a></li>
 							<li><a href="XSYPTforum.html">论坛</a></li>
 							<li><a href="XSYPTtorrent.html">种子</a></li>
 							<!-- search -->
 							<form action="#" class="navbar-form navbar-left" role="search">
 								<div class="form-group">
-									<input type="text" placeholder = "分享|交流|传递">
-									<button type="submit" class="btn btn-default ">查找submit</button>
+									<input type="text"  placeholder = "分享|交流|传递">
+									<button type="submit" class="btn btn-default ">给我找！</button>
 								</div>							
 							</form>
-							<li class="dropdown active">
+							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发布<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li class="active"><a href="XSYPTsubtitles.html">字幕</a></li>
+									<li><a href="XSYPTsubtitles.html">字幕</a></li>
 									<li><a href="XSYPTupload.html">发布</a></li>
 									<li class="divider" role= "separator"></li>
 									<li><a href="XSYPToffers.html">候选</a></li>
@@ -143,147 +143,41 @@
 
 	<!-- 自适应	 -->
 	<div class="container container-nonPadding" id="mainView">
-
 		<div id="main">
-
 			<!-- main info -->
 			<div class="info container-fluid">
-				<!-- 文件上传表格 -->
 				<div class="row">
+					<!-- 规则介绍面板 -->
 					<div class="container-fluid">
 						<div class="panel panel-success">
-							<div class="panel-heading">大家下载的资源会保种多久？</div>
+							<div class="panel-heading">候选种子发布规则</div>
 							<div class="panel-body">
-								<h3>rules:</h3>
-								<ol>
-									<li>上传的文件请使用英文文件名！</li>
-									<li>2.字幕<b>必须与视频文件同步</b>。否则纯粹是浪费空间。</li>
-									<li>3.<b>标题</b>中并不需要字幕的语言标记，因为已经有国旗标记。不过，如果你觉得需要也可以在文件名末尾添加，如chs。</li>
-									<li>如果你上传的字幕是合集，请将它们打包为zip或rar后再上传。</li>
-									<li>如果你上传的字幕是Vobsub格式(idx+sub)，请打包为zip或rar后再上传。</li>
-									<li>如果你上传的字幕是proper(正确版本)或re-synced(重新调校)的字幕，请在字幕文件名末尾添加proper或resynced标记。</li>
-								</ol>
-								<form method="#" action="#">
-									<div class="form-group">
-										<label for="inputFile">File input</label>
-										<input type="file" id="inputFile">
-										<p class="help-block">(文件最大限制：3.00 MB.)</p>
-									</div>
-									<div class="form-group">
-										<label for="torrentId">种子ID</label>
-										<input type="text" class="form-control" id="torrentId"
-										placeholder = "(种子详情页面网址末尾的数字。
-										如 http://pt.xsyu.edu.cn/details.php?id=16 数字16即种子ID)"
-										>
-									</div>
-									<div class="form-group">
-										<label for="torrentTitle">title</label>
-										<input type="text" class="form-control" id="torrentTitle" placeholder = "(可选，不填则使用种子文件名)">
-									</div>
-									<div class="form-group">
-										<label for="torrentLanguage">语言</label>
-										<select name="torrentLanguage" id="torrentLanguage" class="form-control ">
-											<optgroup label="language">
-												<option value="0">(所有语言)</option>
-												<option value="6">English</option>
-												<option value="25">简体中文</option>
-												<option value="28">繁體中文</option>
-												<option value="1">Bulgarian</option>
-												<option value="2">Croatian</option>
-												<option value="3">Czech</option>
-												<option value="4">Danish</option>
-												<option value="5">Dutch</option>
-												<option value="7">Estonian</option>
-												<option value="8">Finnish</option>
-												<option value="9">French</option>
-												<option value="10">German</option>
-												<option value="11">Greek</option>
-												<option value="12">Hebrew</option>
-												<option value="13">Hungarian</option>
-												<option value="14">Italian</option>
-												<option value="15">日本語</option>
-												<option value="16">한국어</option>
-												<option value="17">Norwegian</option>
-												<option value="18">Other</option>
-												<option value="19">Polish</option>
-												<option value="20">Portuguese</option>
-												<option value="21">Romanian</option>
-												<option value="22">Russian</option>
-												<option value="23">Serbian</option>
-												<option value="24">Slovak</option>
-												<option value="26">Spanish</option>
-												<option value="27">Swedish</option>
-												<option value="29">Turkish</option>
-												<option value="30">Slovenian</option>
-												<option value="31">Thai</option>
-											</optgroup>
-											
-										</select>
-									</div>									
-										<input type="checkbox" checked data-toggle = "switch" id="anonymity">anonymity\\为甚吗这个样式应用不上啊
-									</div>									
-								</form>
-
-							</div><!-- end of panel-body -->
-						</div><!-- end of panel -->
-					</div><!-- end of container -->
+								<h2>规则:</h2>
+								<ul><li><b class='User_Name'>User</b>及以上等级的用户可直接发布种子，无需经过候选。<b class='Peasant_Name'>Peasant</b>或以上等级的用户可以添加候选。</li>
+								<li>当候选的支持票比反对票多<b>15</b>票时，候选被通过。</li>
+								<li>如候选在添加<b>72</b>小时后未被通过，它将被删除。</li>
+								<li>如在候选通过后<b>24</b>小时内用户没有发布种子，通过的候选将被删除。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 投票信息面板 -->
 					<div class="container-fluid">
 						<div class="panel panel-success">
-							<div class="panel-heading">server</div>
+							<div class="panel-heading">投票信息</div>
 							<div class="panel-body">
-								<!-- Pagination 导航页 -->
-								<div class="pagination">
-									<ul>
-										<li class="previous">
-											<a href="#" class="fui-arrow-left"></a>
-										</li>
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#">5</a></li>
-
-										<li class="pagination-dropdown dropup">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-												<i class = "fui-triangle-up"></i>
-											</a>
-											<!-- dropdown menu -->
-											<ul class="dropdown-menu">
-												<li>
-													<a href="#">10-20</a>
-												</li>
-												<li>
-													<a href="#">20-30</a>
-												</li>
-												<li>
-													<a href="#">end</a>
-												</li>
-											</ul>
-										</li>
-
-										<li class="next">
-											<a href="#" class="fui-arrow-right"></a>
-										</li>
-										
-									</ul>
-								</div><!--  end of  Pagination 导航页 -->
-								<!-- 种子字幕数据 -->
-								<table class="table  table-bordered">
-									<thead>
-										<tr>
-											<th>language</th>
-											<th>title</th>
-											<th>time</th>
-											<th>size</th>
-											<th>click</th>
-											<th>user</th>
-											<th>report</th>
-										</tr>
-									</thead>
+								<table class="table  table-striped table-hover">
 									<tbody>
-										<tr>
-											<td>data</td>
-											<td>data</td>
+										<thead>
+											<tr>
+												<th>type</th>
+												<th>type</th>
+												<th>type</th>
+												<th>type</th>
+												<th>type</th>
+											</tr>
+										</thead>
+										<tr>											
 											<td>data</td>
 											<td>data</td>
 											<td>data</td>
@@ -292,49 +186,21 @@
 										</tr>
 									</tbody>
 								</table>
-								<!-- Pagination 导航页 -->
-								<div class="pagination">
-									<ul>
-										<li class="previous">
-											<a href="#" class="fui-arrow-left"></a>
-										</li>
-										<li><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#">5</a></li>
-
-										<li class="pagination-dropdown dropup">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-												<i class = "fui-triangle-up"></i>
-											</a>
-											<!-- dropdown menu -->
-											<ul class="dropdown-menu">
-												<li>
-													<a href="#">10-20</a>
-												</li>
-												<li>
-													<a href="#">20-30</a>
-												</li>
-												<li>
-													<a href="#">end</a>
-												</li>
-											</ul>
-										</li>
-
-										<li class="next">
-											<a href="#" class="fui-arrow-right"></a>
-										</li>
-										
-									</ul>
-								</div><!--  end of  Pagination 导航页 -->
 							</div><!-- end od panel-body -->
 						</div><!-- end of panel -->
 					</div><!-- end of contaner-fluid -->
+					发布页面做好后套用
+					<!-- 发布面板.. -->
+					<div class="container-fluid">
+						<div class="panel panel-success">
+							<div class="panel-heading">添加候选</div>
+							<div class="panel-body">
+								<h2>placeholder</h2>
+								
+							</div>
+						</div>
+					</div>
 				</div><!-- end of row -->
-
-				
-
 			</div><!--  end of info -->
 		</div><!-- end of main -->
 	</div> <!-- end of container -->
@@ -359,11 +225,9 @@
 
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- // <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" ></script> -->
 	<!-- // <script type="text/javascript" src ="javascripts/Bootstrap.min.js"></script> -->
-	<!-- // <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/js/flat-ui.min.js"></script> -->
-
-	<!-- // <script type="text/javascript" src=""></script> -->
+	<script type="text/javascript" src=""></script>
 </body>
 </html>

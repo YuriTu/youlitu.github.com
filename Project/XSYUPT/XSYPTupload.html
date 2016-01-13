@@ -25,7 +25,13 @@
 	<!-- flat-ui -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css">
 	<!-- FA ICON -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+<!-- 	<link rel="stylesheet" type="AddType font/eot" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/fonts/fontawesome-webfont.eot">
+	<link rel="stylesheet" type="image/svg+xml" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/fonts/fontawesome-webfont.svg">
+	<link rel="stylesheet" type="AddType font/ttf" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf">
+	<link rel="stylesheet" type="application/x-font-woff" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/fonts/fontawesome-webfont.woff">
+	<link rel="stylesheet" type="application/x-font-woff2" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 	<!-- basic -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/basic.css">
@@ -65,7 +71,7 @@
 							<form action="#" class="navbar-form navbar-left" role="search">
 								<div class="form-group">
 									<input type="text" placeholder = "分享|交流|传递">
-									<button type="submit" class="btn btn-default ">查找submit</button>
+									<button type="submit" class="btn btn-default ">给我找！</button>
 								</div>							
 							</form>
 							<li class="dropdown active">
@@ -177,7 +183,7 @@
 									<div class="form-group">
 										<label for="subHeadingTorrent" class="col-sm-1 control-label">副标题</label>
 										<div class="col-sm-11">
-											<input type="text" id="subHeading" class="form-control"
+											<input type="text" id="subHeadingTorrent" class="form-control"
 											 placeholder="(来自IMDb的链接。如电影The Dark Knight的链接是http://www.imdb.com/title/tt0468569/)"
 											>
 											<p class="help-block">(将在种子页面种子标题下显示。如<i>720p @ 4615 kbps - DTS 5.1 @ 1536 kbps</i>)</p>
@@ -201,70 +207,113 @@
 													  <i class="icon-italic" aria-hidden = "true"></i>
 													</button>
 													<!-- underline -->
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="underline">
 														<i class="icon-underline" aria-hidden = "true"></i>
 													</button>
 												</div><!-- end of text toolbar -->
 												<!-- align toolbar -->
 												<div class="btn-group" role = "group" aria-label = "toolabr">
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="align-left">
 														<i class=" icon-align-left" aria-hidden = "true"></i>
 													</button>
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="align-center">
 														<i class="icon-align-center" aria-hidden = "true"></i>
 													</button>
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="align-right">
 														<i class="icon-align-right" aria-hidden = "true"></i>
 													</button>
 													<button type="button" class="btn btn-default" aria-label="Bold">
-														<i class="icon-align-justify" aria-hidden = "true"></i>
+														<i class="icon-align-justify" aria-hidden = "align-justify"></i>
 													</button>
-												</div><!-- end align -->
+												</div><!-- end align -->												
 												<!-- font toolbar -->
 												<!-- caution!not FA icon -->
 												<div class="btn-group" role = "group" aria-label = "toolabr">
 													<!-- font family-->
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="font">
 														<i class="glyphicon glyphicon-font" aria-hidden = "true"></i>
 													</button>
 													<!-- font-size -->
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="text-size">
 														<i class="glyphicon glyphicon-text-size" aria-hidden = "true"></i>
 													</button>
 													<!-- font color -->
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="text-color">
 														<i class="glyphicon glyphicon-text-color" aria-hidden = "true"></i>
 													</button>
 													<!-- font background -->
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="text-background">
 														<i class="glyphicon glyphicon-text-background" aria-hidden = "true"></i>
 													</button>
 												</div><!-- end font toolbar-->
 												<!-- picture&list toolbar -->
 												<div class="btn-group" role = "group" aria-label="toolbar">
 													<!-- bold -->
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="picture">
 														<i class="icon-picture" aria-hidden = "true"></i>
 													</button>
 													<!-- Italic -->
-													<button type="button" class="btn btn-default" aria-label="Italic">
+													<button type="button" class="btn btn-default" aria-label="list-ul">
 													  <i class="icon-list-ul" aria-hidden = "true"></i>
 													</button>
 													<!-- underline -->
-													<button type="button" class="btn btn-default" aria-label="Bold">
+													<button type="button" class="btn btn-default" aria-label="list-ol">
 														<i class="icon-list-ol" aria-hidden = "true"></i>
 													</button>
 												</div><!-- end of text toolbar -->
+												<!-- face change -->
+												<div class="btn-group" role = "group" aria-label = "toolabr">
+													<button type="button" class="btn btn-default" aria-label="github-alt">
+														<i class="icon-github-alt" aria-hidden = "true"></i>
+													</button>
+												</div><!-- end face -->
 
 											</div><!-- end of toolbar -->
 											
-											<textarea name="introTorrent" id="introTorrent" cols="100" rows="10" class="form-control">
-												
-											</textarea>
-										</div><!-- end of textarea pael -->
+											<textarea name="introTorrent" id="introTorrent" cols="100" rows="10" class="form-control" placeholder = "必须填写"></textarea>											
+										</div><!-- end of textarea pael -->										
 									</div><!-- end of form group -->
 
-								</form>
+									<div class="form-group">
+										<label for="typeTorrent" class="col-sm-1 control-label">类型选择</label>
+										<div class="col-sm-11">
+											<select name="typeTorrent" id="typeTorrent" class="form-control  select-primary select-block mbl">
+													<option value="0">请选择</option>
+													<option value="401">电影</option>
+													<option value="404">纪录片</option>
+													<option value="405">动漫</option>
+													<option value="402">电视剧</option>
+													<option value="403">综艺</option>
+													<option value="406">MV</option>
+													<option value="407">体育</option>
+													<option value="408">音乐</option>
+													<option value="409">其它</option>
+												</select>
+										</div>
+									</div><!-- end typetorrent group	 -->
+									<!-- anonymity -->
+									<div class="from-group">
+										<label for="anonymity" class="col-sm-1 control-label">匿名吗？</label>
+										<div class="col-sm-11 ">
+											<div class="radio">												
+												<label for="anonymityRadio1">
+													<input type="radio" name="anonymityRadio" id="anonymityRadio1" value="anonymityRadio1" checked>
+													行不更名，坐不改姓
+												</label>
+												<label for="anonymityRadio2">
+													<input type="radio" name="anonymityRadio" id="anonymityRadio2" value="anonymityRadio2">
+													为人民服务，叫我老司机
+												</label>
+											</div>											
+										</div>
+									
+									</div><!--  end anonymity group -->
+									<!-- submit -->
+									<div class="from-group">
+										<button class="btn btn-primary btn-embossed">发布</button>
+										<span>我已经仔细阅读了发种规则</span>
+									</div>
+								</form><!-- end formtorrent -->
 
 							</div><!-- end od panel-body -->
 						</div><!-- end of panel -->
@@ -291,12 +340,11 @@
 	<!--// <script>window.jQuery || document.write('<script type="text/javascript" src = "javascripts/librarys/jquery-2.1.4.min.js"><\/script>')</script>-->
 	<!-- // <script type="text/javascript" src = "javascripts/jquery-2.1.4.min.js"></script> -->
 
-
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- // <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" ></script> -->
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- // <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" ></script> -->
 	<!-- // <script type="text/javascript" src ="javascripts/Bootstrap.min.js"></script> -->
+	
 	<script type="text/javascript" src="javascripts/basic.js"></script>
 </body>
 </html>
