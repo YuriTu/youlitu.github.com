@@ -64,4 +64,11 @@ body{
 	color: #fff;
 }
 
+// u-user
+.u-user .main{
+	width: 360px;
+	height: 240px;
+	margin: 0 auto;
+}
+
 /*@group overrides

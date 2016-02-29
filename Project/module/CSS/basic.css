@@ -1,0 +1,90 @@
+/*2016-02-27
+version:0.0.1
+*/
+
+/*color list*/
+
+/*@group general styles*/
+/*@grey F6F6F6*/
+/*@deep grey #ddd*/
+
+/*@group page components*/
+
+/*n-nav*/
+.n-nav{
+	width: 300px;
+	margin: 0 auto;	
+}
+.n-nav .nav-title{
+	background-color: #F6F6F6;
+	
+	font-family: "microsoft yahei";
+	text-align: center;
+	cursor: pointer;
+	
+	padding: 5px;
+
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+
+	position: relative;
+}
+.n-nav .nav-title:hover {
+	/* style */
+	background-color: #ddd;
+}
+
+.caret{
+	width: 0;
+	height: 0;
+	border-style: solid dashed none dashed;
+	border-width: 8px;
+	border-color: #bbb transparent transparent transparent;
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	right: 20px;
+	top: 18px;
+}
+.active.caret{
+	border-style: none dashed solid dashed;
+	border-width: 8px;
+	border-color: transparent transparent #bbb transparent;
+}
+ul.dropdown-menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.dropdown-menu{
+	display: none;
+	// background-color: #ddd;
+}
+.dropdown-menu li{
+	
+	background-color: #eee;
+	cursor: pointer;
+	padding: 5px 0;
+
+	padding-left: 15px;
+	margin-bottom: 1px;
+}
+.dropdown-menu li:hover {
+	/* style */
+	background-color: #eee;
+}
+.dropdown-menu li>a{
+	text-decoration: none;
+}
+.dropdown-menu li>a:hover{
+	text-decoration: underline;
+}
+.block{
+	display: block;
+}
+
+
+
+
+
+
