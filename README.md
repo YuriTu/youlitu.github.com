@@ -27,7 +27,7 @@
 <br>
 ##项目经历	
 ###2015.11-2015.12	西安石油大学PT站点代码优化	工作前端代码优化员
-在西安石油大学亟需改善网络环境，提升用户体验的情况下，进行PT站的代码优化工作。<a href="https://youlitu.github.io/Project/XSYUPT/XSYPTindex.html"></a> 查看站点镜像<br>
+在西安石油大学亟需改善网络环境，提升用户体验的情况下，进行PT站的代码优化工作。<a href="https://youlitu.github.io/Project/XSYUPT/XSYPTindex.html">查看站点镜像</a> <br>
 1.制定了界面布局的优化方案，将之前的 table 布局更换为符合 w3c 的标准的页面架构，使用了 bootstrap 框架进行优化， 。<br>
 2.优化CSS样式，美化背景，主题，按钮、图标；需要在不破坏原来页面布局的情况下，对各种图标进行美化，达到扁平化的效果。<br>
 <br>
