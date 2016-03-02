@@ -56,8 +56,10 @@ $(function  () {
     .attr('title', '学会使用bootstrap的栅格系统创建响应式页面，在大屏、中屏、小屏有不同的页面，仿照他人的页面进行架设，通过看他人的代码，补足了一些知识漏洞，改善了自己的代码风格，以及对浏览器兼容有了更好的理解。');
   $("#projectFour")
     .attr('title', '公司试用期主页，第一次和设计人员合作，感觉设计很奇怪，字号间距等混乱而不统一，感觉响应式会比较难做。');
-    $("#projectFive")
-      .attr('title', '学校P2P下载站的优化以及前端重构，第一次开始接触前后端合作');
+  $("#projectFive")
+    .attr('title', '学校P2P下载站的优化以及前端重构，第一次开始接触前后端合作');
+  $("#projectSix")
+    .attr('title', '开始学习javaweb后端操作，服务器在网易蜂巢使用CentOS操作系统');
   // 项目title展示
   
   $("div.projectShow")
