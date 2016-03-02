@@ -71,12 +71,12 @@ var option = {
                 itemStyle: createRandomItemStyle()
             },
             {
-                name: "PHP",
+                name: "JavaWeb",
                 value: 3898,
                 itemStyle: createRandomItemStyle()
             },
             {
-                name: "MySQL",
+                name: "servlet",
                 value: 3484,
                 itemStyle: createRandomItemStyle()
             },
@@ -86,7 +86,7 @@ var option = {
                 itemStyle: createRandomItemStyle()
             },
             {
-                name: "Less",
+                name: "CentOS",
                 value: 1965,
                 itemStyle: createRandomItemStyle()
             },
@@ -111,7 +111,7 @@ var option = {
                 itemStyle: createRandomItemStyle()
             },
             {
-                name: "Node.js",
+                name: "JSP",
                 value: 3462,
                 itemStyle: createRandomItemStyle()
             },
