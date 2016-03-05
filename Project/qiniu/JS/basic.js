@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		/* Act on the event */
 		$("#albumPhoto").attr('src', clickSrc);
+		$(".i-download").attr('href',clickSrc);
 	});
 	// $(".c-carousel")
 	// 	.load(function() {
