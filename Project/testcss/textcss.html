@@ -4,59 +4,264 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="textcss.css">
-
+	<style type="text/css">
+		.progress_bar {
+		    margin: 10px 0;
+		    padding: 3px;
+		    border: 1px solid #000;
+		    font-size: 14px;
+		    clear: both;
+		    opacity: 0;
+		    -moz-transition: opacity 1s linear;
+		    -o-transition: opacity 1s linear;
+		    -webkit-transition: opacity 1s linear;
+		    background-color: red;
+		  }
+		
+		  .progress_bar.loading {
+		    opacity: 1.0;
+		  }
+		  .progress_bar .percent {
+		    background-color: #99ccff;
+		    height: auto;
+		    width: 0;
+		  }
+		  .testBox{
+		  	width: 200px;
+		  	height: 200px;
+		  	background-color: red;
+		  }
+	</style>
 </head>
 <body>
-	
-	<div class="img">
-		<img src="img/photo-2.jpg" alt="photo">
-		<ul>
-			<li class="theone">
-				<a href="#" title="one">the one
-					<span class="outer">
-						<span class="inter">
-							<span class="note">the one introduce</span>
-						</span>
-					</span>
-				</a>
-			</li>
-			<li class="thetwo">
-				<a href="#" title="two">the two
-				<span class="outer">
-					<span class="inter">
-						<span class="note">the two introduce</span>
-					</span>
-				</span>
-				</a>
-			</li>
-			<li class="thethree">
-				<a href="#" title="three">the three
-				<span class="outer">
-					<span class="inter">
-						<span class="note">the one introduce</span>
-					</span>
-				</span>
-				</a>
-			</li>
-			<li class="thefour">
-				<a href="#" title="four">the four
-				<span class="outer">
-					<span class="inter">
-						<span class="note">the one introduce</span>
-					</span>
-				</span>
-				</a>
-			</li>
-		</ul>
+	<div id="new">
+		
 	</div>
-
+	<input type="file" id="files" name="file" multiple />
+	<button onclick="abortRead();">Cancel read</button>
+	<div id="placeholder"></div>
+	</div>
+	<a href="img/logo.jpg" download="surprise.jpg">download</a>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
 	<script type="text/javascript">
+	// jQuery(document).ready(function($) {
+	// 	document.getElementById('files').addEventListener('change',countFile,false);
+	// 	document.getElementById('files').addEventListener('change', handleFileSelect, false);
+	// 	function countFile(event) {
+	// 		var files = event.target.files;
+	// 		var i = 0;
+	// 		var len = files.length;
+	// 		for ( i = 0; i < len; i++) {
+	// 				$("#placeholder").before("<div class='progress_bar' id='progress_bar"+[i]+"'>"+"<div class='percent' id = 'percent_"+[i]+"'>0%</div></div>");
+					
+	// 				// event.preventDefault();
+	// 				alert("1");
+	// 				// document.getElementById('files').addEventListener('change', handleFileSelect, false);
+	// 				alert("6");
+	// 				$("#files").trigger('handleFileSelect');
+	// 				// $("#files").handleFileSelect(event);
+	// 			// }
+	// 		// for (var i = 0; i < len; i++) {
+	// 			var reader;
+	// 			alert("4");
+	// 			var progress = document.getElementById("'.percent_"+[i]+"'");
+	// 			alert("5");
+	// 			// var progress = document.querySelector("'.percent_"+[i]+"'");
+	// 			$("#files").trigger('handleFileSelect');
+				
 
-getRating(2);
-function getRating(rating) {
-    if(rating > 5 || rating < 0) throw new Error('数字不在范围内');
-    return '★★★★★☆☆☆☆☆'.substring(5 - rating, 10 - rating );
-}
+	// 			function handleFileSelect(evt) {
+	// 			  // Reset progress indicator on new file selection.
+	// 			  progress.style.width = '0%';
+	// 			  progress.textContent = '0%';
+
+	// 			  reader = new FileReader();
+	// 			  reader.onerror = errorHandler;
+	// 			  reader.onprogress = updateProgress;
+	// 			  reader.onabort = function(e) {
+	// 			    alert('File read cancelled');
+	// 			  };
+	// 			  alert("2");
+	// 			  reader.onloadstart = function(e) {
+	// 			    document.getElementById("'progress_bar"+[i]+"'").className = 'loading';
+	// 			  };
+	// 			  reader.onload = function(e) {
+	// 			    // Ensure that the progress bar displays 100% at the end.
+	// 			    progress.style.width = '100%';
+	// 			    progress.textContent = '100%';
+	// 			    var timeProBar = document.getElementById("'progress_bar"+[i]+"'").className='';
+	// 			    setTimeout(timeProBar, 2000);
+	// 			    // setTimeout("document.getElementById('progress_bar').className='';", 2000);
+	// 			  }
+
+	// 			  // Read in the image file as a binary string.
+	// 			  alert("3");
+	// 			  reader.readAsBinaryString(evt.target.files[i]);
+	// 			}
+	// 		}
+			
+
+	// 		function abortRead() {
+	// 		  reader.abort();
+	// 		}
+	// 		function errorHandler(evt) {
+	// 		  switch(evt.target.error.code) {
+	// 		    case evt.target.error.NOT_FOUND_ERR:
+	// 		      alert('File Not Found!');
+	// 		      break;
+	// 		    case evt.target.error.NOT_READABLE_ERR:
+	// 		      alert('File is not readable');
+	// 		      break;
+	// 		    case evt.target.error.ABORT_ERR:
+	// 		      break; // noop
+	// 		    default:
+	// 		      alert('An error occurred reading this file.');
+	// 		  };
+	// 		}
+
+	// 		function updateProgress(evt) {
+	// 		  // evt is an ProgressEvent.
+	// 		  if (evt.lengthComputable) {
+	// 		    var percentLoaded = Math.round((evt.loaded / evt.total) * 100);
+	// 		    // Increase the progress bar length.
+	// 		    if (percentLoaded < 100) {
+	// 		      progress.style.width = percentLoaded + '%';
+	// 		      progress.textContent = percentLoaded + '%';
+	// 		    }
+	// 		  }
+	// 		}
+	// 	}
+		
+	// 	// var progressBar = "<div id='progress_bar'><div class='percent'>0%</div></div>";
+	// 	// 使用for循环
+	// 	// 创建 progress_bar_0
+	// 	// 判断有多少个文件
+	// 	// 每个文件触发一次函数
+	// 	// 函数内部get到的id为对应 progress_bar_0
+
+	// 	// function progress() {
+	// 	// 	var reader;
+	// 	// 	  var progress = document.querySelector('.percent');
+
+	// 	// 	  function abortRead() {
+	// 	// 	    reader.abort();
+	// 	// 	  }
+
+	// 	// 	  function errorHandler(evt) {
+	// 	// 	    switch(evt.target.error.code) {
+	// 	// 	      case evt.target.error.NOT_FOUND_ERR:
+	// 	// 	        alert('File Not Found!');
+	// 	// 	        break;
+	// 	// 	      case evt.target.error.NOT_READABLE_ERR:
+	// 	// 	        alert('File is not readable');
+	// 	// 	        break;
+	// 	// 	      case evt.target.error.ABORT_ERR:
+	// 	// 	        break; // noop
+	// 	// 	      default:
+	// 	// 	        alert('An error occurred reading this file.');
+	// 	// 	    };
+	// 	// 	  }
+
+	// 	// 	  function updateProgress(evt) {
+	// 	// 	    // evt is an ProgressEvent.
+	// 	// 	    if (evt.lengthComputable) {
+	// 	// 	      var percentLoaded = Math.round((evt.loaded / evt.total) * 100);
+	// 	// 	      // Increase the progress bar length.
+	// 	// 	      if (percentLoaded < 100) {
+	// 	// 	        progress.style.width = percentLoaded + '%';
+	// 	// 	        progress.textContent = percentLoaded + '%';
+	// 	// 	      }
+	// 	// 	    }
+	// 	// 	  }
+
+	// 	// 	  function handleFileSelect(evt) {
+	// 	// 	    // Reset progress indicator on new file selection.
+	// 	// 	    progress.style.width = '0%';
+	// 	// 	    progress.textContent = '0%';
+
+	// 	// 	    reader = new FileReader();
+	// 	// 	    reader.onerror = errorHandler;
+	// 	// 	    reader.onprogress = updateProgress;
+	// 	// 	    reader.onabort = function(e) {
+	// 	// 	      alert('File read cancelled');
+	// 	// 	    };
+	// 	// 	    reader.onloadstart = function(e) {
+	// 	// 	      document.getElementById('progress_bar').className = 'loading';
+	// 	// 	    };
+	// 	// 	    reader.onload = function(e) {
+	// 	// 	      // Ensure that the progress bar displays 100% at the end.
+	// 	// 	      progress.style.width = '100%';
+	// 	// 	      progress.textContent = '100%';
+	// 	// 	      setTimeout("document.getElementById('progress_bar').className='';", 2000);
+	// 	// 	    }
+
+	// 	// 	    // Read in the image file as a binary string.
+	// 	// 	    reader.readAsBinaryString(evt.target.files[0]);
+	// 	// 	    reader.readAsBinaryString(evt.target.files[1]);
+	// 	// 	    reader.readAsBinaryString(evt.target.files[2]);
+	// 	// 	  }
+
+	// 	// 	  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+	// 	// }
+	// 	// function howManyFile() {
+	// 	// 	document.getElementById('files').addEventListener('change',countFile,false);
+	// 	// 	function countFile(event) {
+	// 	// 		var files = event.target.files,
+	// 	// 				i = 0,
+	// 	// 				len = files.length;
+	// 	// 		return len;		
+	// 	// 	}
+	// 	// }
+	// });
+	addLoadEvent(getNewContent);
+	function addLoadEvent (func) {
+		// body...
+		var oldonload = window.onload;
+		if (typeof window.onload != "function") {
+			window.onload = func;
+		}else{
+			window.onload = function(){
+				oldonload();
+				func();
+			}
+		}
+	}
+	function getHTTPObject() {
+		if (typeof XMLHttpRequest == "undefined") {
+			XMLHttpRequest = function(){
+				try{return new ActiveXObject("Msml2.XMLHTTP.6.0")}
+					catch(e){}
+				try{return new ActiveXObject("Msml2.XMLHTTP.3.0")}
+					catch(e){}
+				try{return new ActiveXObject("Msml2.XMLHTTP")}
+					catch(e){}
+				return false;
+			}
+		}
+		return new XMLHttpRequest();
+	}
+	function getNewContent() {
+		var request = getHTTPObject();// new XHR
+		if (request) {
+			request.open("GET","https://youlitu.github.io/Project/XSYUPT/XSYPTindex.html",true);
+			request.onreadystatechange = function() {
+				if (request.readyState == 4) {
+					// var para = document.createElement("p");
+					var para = request.responseText;
+					// var txt = document.createTextNode(request.responseText);
+					// para.appendChild(txt);
+					// document.getElementById('new').appendChild(para);
+					// document.getElementById('new').innerHTML(para);
+					document.write(para);
+				}
+			}
+			request.send(null);
+		}else{
+			alert('sorry,your browser doesn\'t support XMLHttpRequest');
+		}
+	}
+		
 	</script>
 </body>
 </html>

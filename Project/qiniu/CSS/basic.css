@@ -1,0 +1,384 @@
+/*2016-03-02
+version:0.0.1
+*/
+
+/*color list*/
+/*@write #fff*/
+/*@grey F6F6F6*/
+/*@deep grey #ddd*/
+
+
+/*@main navbar #5184fc*/
+/*navbar hover #4777de*/
+
+/*@group general styles*/
+html,body{
+	height: 100%;
+	margin: 0;
+	border:0;	
+}
+.btn{
+	background-color: transparent;
+	border:none;
+}
+/*@group page components*/
+/*nav*/
+.nav{
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+.n-navbar{
+	display: block;
+	background-color: #5184fc;
+	height: 115px;	
+}
+.n-navbar .n-header{
+	float: left;
+	/*height: 35px;*/
+	line-height: 115px;	
+	margin-left: 25px;
+	margin-right: 50px;	
+}
+.n-navbar .n-header .n-logo{
+	color: #fff;
+	font-size: 35px;
+}
+
+.n-navbar .n-main > li{
+	float: left;
+	height: 115px;
+	line-height: 115px;	
+}
+
+.n-navbar .n-link{
+	height: 70px;
+	padding: 20px 15px;
+	color: #fff;
+	font-size: 25px;	
+}
+.n-navbar .n-main .n-link:hover{
+	background-color: #4777de;
+}
+/*navbar user*/
+.n-navbar .n-right{
+	height: 115px;
+	line-height: 115px;	
+	float: right;
+	margin-right: 50px;
+}
+/*mainview*/
+#albumView{
+	width: 100%;
+	min-height: 100%;
+}
+.m-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+/*5张图300*300 间距25px 1500+4*25*/
+.m-container .row {
+	height: 300px;
+	width: 1600px;
+	background-color: #aaa;
+	margin: 20px auto;
+	margin-bottom: 20px;
+}
+.m-container .row>.item{
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	margin-right: 22px;
+
+	background-color: #eee;
+}
+.m-container .row :last-child{
+	margin-right: 0px !important;
+}
+
+/*list view*/
+.m-container .listView .item{
+	display: block;
+	width: 150px;
+	height: 150px;
+	background-color: #eee;
+	margin-top: 10px;
+}
+
+/*upload modal*/
+.mod-modal{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+	/*overflow: hidden;*/
+	outline: 0;	
+}
+.mod-modal .mod-dialog {
+	position: relative;
+	width: 1000px;
+	margin: 30px auto;
+}
+.mod-modal .mod-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 5px;  
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.mod-modal .mod-content .mod-header{
+	height: 20px;
+	padding: 15px;	
+}
+.mod-header .close{
+	width: 35px;
+	height: 35px;
+
+	float: right;	
+	background-color: transparent;
+	border:none;	
+
+	font-size: 35px;
+}
+.modal .mod-content .mod-header h4{
+	font-size: 50px;
+}
+.mod-body{
+	height: 600px;
+	min-height: 600px;
+}
+
+.mod-body .upload{
+	min-height: 800px;
+}
+.mod-body .container{
+	padding: 20px;
+} 
+.mod-body .container input[type="file"]{
+	opacity: 0;
+	width: 150px;
+	height: 150px;
+	float: left;
+	border:5px dashed #bbb;
+}
+.mod-body .container .hoverFile{
+	display: block;
+	width: 150px;
+	height: 150px;
+	border:5px dashed #bbb;
+	background:url(../images/plusbutton.png) no-repeat;
+
+}
+/*progressbar*/
+.mod-body .container .progressBar{
+	margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    clear: both;
+    opacity: 1;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear; 
+}
+.mod-body .container .progressBar .loading{
+	opacity: 1.0;
+}
+.mod-body .container .progressBar .percent{
+	background-color: #99ccff;
+	height: auto;
+	width: 0;
+}
+.mod-content .mod-footter{
+	width: auto;
+	height: 80px;
+	min-height: 30px;
+}
+/*file view/*/
+
+/*spical style*/
+.mod-body .progressBar{
+	margin: 10px 0;
+	padding: 3px;
+	border: 1px solid #000;
+	font-size: 14px;
+	clear: both;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+.mod-body .progressBar .loading{
+	opacity: 1.0;
+}
+.mod-body .progressBar .percent{
+	background-color: #99ccff;
+	height: auto;
+	width: 0;
+}
+.mod-body .thumb{
+	height: 75px;
+	border: 1px solid #000;
+	margin: 10px 5px 0 0;
+}
+
+
+
+
+.mod-footter .btn.upload{
+	width: 80px;
+	height: 50px;
+	float: right;
+	margin: 15px;
+
+	border-radius: 5px;
+	
+
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+
+	background-color: #5184fc;	
+}
+.mod-footter .btn.upload:active{
+	background-color: #3658A8;
+}
+
+
+
+/*fixed icon*/
+.f-fix{	
+	width: 100px;
+	height: 100px;
+	position: fixed;	
+	top: 80%;
+	right: 10px;
+	left: auto;		
+	cursor: pointer;
+	z-index: 1;
+	background: url(../images/plus.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px;	
+	overflow: hidden;
+	
+}
+.f-fix:hover{
+	background-position: -120px 0;
+}
+.f-button{
+	width: 80px;
+	height: 80px;
+	display: none;
+	z-index: 1;
+	position: fixed;
+	top: 81%;
+	right: 12px;
+
+	border-radius: 50%;
+	background-color: #5184fc;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 80px;
+}
+.f-fix .f-button:first-child{
+	
+}
+
+/*carousel*/
+.c-carousel{
+	// width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	/*background-color: red;*/
+}
+@media (min-width: 1200px) {
+	.c-carousel{
+		width: 1200px;
+	}
+}
+
+.c-carousel .c-inner{
+	position: relative;
+}
+.c-carousel .c-inner .c-item{
+
+}
+.c-carousel .c-inner .c-item>img{
+	width: 100%;
+}
+.c-carousel .c-inner .c-control{	
+	width: 80px;
+	height: 80px;
+
+	border-radius: 50%;
+
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);	
+
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+
+	filter: alpha(opacity=50);
+	opacity: .8;
+	text-shadow: 1px 2px 5px #000;
+}
+.c-carousel .c-control.c-left{
+	left: 0px;
+}
+.c-carousel .c-control.c-right{
+	right: 0px;
+}
+.i-info{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.i-info .i-user{
+	display: block;
+	width: 200px;
+}
+.i-info .i-user>img{
+	// display: inline-block;
+	width: 50%;
+	border-radius: 50%;
+	
+	// line-height: 50px;
+}
+.i-info .i-user .i-userData{
+	display: inline;
+	width: 50%;
+
+	
+}
+.i-info .i-user .i-userName{
+
+}
+.i-info .i-user .i-userName .i-date{
+	text-indent: -50px;
+}
+/*footer*/
+.f-footer{
+	height: 100px;
+	background-color: #5184fc;
+}
+.f-footer .f-container{
+	/*width: 100px;*/
+	margin: 0 auto;
+	line-height: 100px;
+	text-align: center;	
+}
+.f-footer .f-container .f-span{
+	color: #fff;
+	font-size: 25px;
+	margin: 0 auto;
+}

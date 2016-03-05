@@ -1,0 +1,92 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=gb2312" /> 
+<title>测试文件上传</title> 
+<script type="text/网页特效" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script language="javascript" type="text/javascript"> 
+$(function(){ 
+//showfolderfilelist("d:codenetwebimagesshoptemplets"); 
+}); 
+function showfolderfilelist(filepath){ 
+var fso, f, fc, sf; 
+fso = new activexobject("scripting.filesystemobject"); 
+try{ 
+f = fso.getfolder(filepath); 
+}catch(err){ 
+alert("文件路径错误或者不存在!!"); 
+return false; 
+} 
+// 列出所有文件 
+fc = new enumerator(f.files); 
+var filename = ""; 
+for(;!fc.atend();fc.movenext()){ 
+filename=fc.item().name; 
+$('<div filepath="' + filepath + filename + '" uploadstate="wait">' + filepath + filename + '</div>').appendto('#showarea'); 
+} 
+// 循环 递归 读取 文件夹的文件 
+sf = new enumerator(f.subfolders); 
+var foldername = ""; 
+for(;!sf.atend();sf.movenext()){ 
+foldername = sf.item().name; 
+showfolderfilelist(filepath + foldername + "/"); 
+} 
+} 
+function startupload(){ 
+var s = $('#uploaddir').val().replace( //gi, '/' ) ; 
+if(s.substring(s.length - 1 , s.length) != '/'){ 
+s += '/' 
+} 
+showfolderfilelist(s) 
+uploadfile(); 
+} 
+// 上传 
+function uploadfile(){ 
+if($('#showarea div[uploadstate=wait]').length > 0){ 
+var thisnode = $('#showarea div[uploadstate=wait]').eq(0) 
+var wshshell=new activexobject("wscript.shell"); 
+$('#fileupload').focus(); 
+wshshell.sendkeys($(thisnode).attr('filepath')); // 路径中不有是中文 
+uploadform.submit(); 
+$('#fileupload').focus(); 
+$('#fileupload').get(0).createtextrange().select(); 
+wshshell.sendkeys('{del}'); 
+var dotstr = '.'; 
+$('<span></span>').appendto(thisnode).css教程('color', 'green'); 
+var uploadstate = setinterval(function(){ 
+if($(thisnode).attr('uploadstate') == 'ok'){ 
+clearinterval(uploadstate); 
+$(thisnode).find('span').css('color', 'red').text('(完成)'); 
+uploadfile(); 
+}else{ 
+if(dotstr.length > 15){ dotstr = '.'; }else{ dotstr += '.'; } 
+$(thisnode).find('span').text('(上传中' + dotstr + ')'); 
+} 
+}, 1000); 
+} 
+} 
+// 在iframe 的返回页面中调用此函数 即可实现循环上传，，否则为死循环 
+function uploadfinish(){ 
+$('#showarea div[uploadstate=wait]').eq(0).attr('uploadstate', 'ok'); 
+} 
+</script> 
+<style type="text/css"> 
+body,td,th { 
+font-family: "微软雅黑", tahoma, helvetica, arial, 5b8b4f53, sans-serif; 
+} 
+</style> 
+</head> 
+<body> 
+<form action="/a.html" method="post" name="loginform" style="margin:0 0; padding:0 0;"> 
+<input name="uploaddir" id="uploaddir" type="text" value="d:a" style="width:800px;" /> 
+<input type="button" value="开始" id="startit" name="startit" onclick="javascript:startupload();"/> 
+</form> 
+<form action="/index/upload" method="post" name="uploadform" enctype="multipart/form-data" target="hidden_frame"> 
+<input type="file" name="fileupload" id="fileupload" /> 
+<iframe name='hidden_frame' id="hidden_frame" style='display:none'></iframe> 
+</form> 
+</iframe> 
+<div id="showarea"> 
+</div> 
+</body> 
+</html>
