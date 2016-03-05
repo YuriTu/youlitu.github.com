@@ -1,20 +1,11 @@
 jQuery(document).ready(function($) {
 	
 	$("#send").click(function(event) {
-		// $.get('getAjax.php', function(data) {
-		// 	optional stuff to do after success 
-		// 	$("#albumView").html(data);
-		// });
 		$('#albumView').load('https://youlitu.github.io/Project/qiniu/ajaxDescription.html');
-		carouselControl();
-		downloadButton();
-		// $(".c-control")bind('click', function(event) {
-		// 	// 轮播图的控制键
-			
-		// });
-		
-		// 下载原图的src更新
-		
+		jQuery(document).ready(function($) {
+			carouselControl();
+			downloadButton();
+		});
 	});
 
 
@@ -63,8 +54,8 @@ jQuery(document).ready(function($) {
 		$(".mod-modal").fadeOut('400');
 	});
 	
-	carouselControl();
-	downloadButton();
+	// carouselControl();
+	// downloadButton();
 	// file
 	// fileURI的支持许可
 	fileReaderPermission();
@@ -113,10 +104,4 @@ jQuery(document).ready(function($) {
 	// 	var src = $("#ablumPhoto").attr('src');
 	// 	$(".i-download").attr('href',src);
 	// }
-
-	
-		
-
-	
-
 });
