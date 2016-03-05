@@ -131,11 +131,11 @@ function moveElement (elementID,final_x,final_y,interval) {
 function getHTTPObject() {
 	if (typeof XMLHttpRequest == "undefined") {
 		XMLHttpRequest = function(){
-			try{return new ActiveXObject("Msml2.XMLHTTP.6.0")};
+			try{return new ActiveXObject("Msml2.XMLHTTP.6.0")}
 				catch(e){}
-			try{return new ActiveXObject("Msml2.XMLHTTP.3.0")};
+			try{return new ActiveXObject("Msml2.XMLHTTP.3.0")}
 				catch(e){}
-			try{return new ActiveXObject("Msml2.XMLHTTP")};
+			try{return new ActiveXObject("Msml2.XMLHTTP")}
 				catch(e){}
 			return false;
 		}

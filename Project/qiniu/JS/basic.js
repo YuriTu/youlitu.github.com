@@ -1,4 +1,11 @@
 jQuery(document).ready(function($) {
+	$("#send").click(function(event) {
+		$("#albumView").load("http://106.2.101.206:8080/Beer-v1/ajaxDescription.html");
+	});
+	// m-container c-carousel c-control
+	$(".c-left").click(function(event) {
+		$()
+	});
 	// fix button
 	$(".f-fix").click(function(event) {
 		if ($(".f-button").is(':hidden')) {
