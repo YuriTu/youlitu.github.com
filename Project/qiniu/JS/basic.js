@@ -2,10 +2,15 @@ jQuery(document).ready(function($) {
 	
 	$("#send").click(function(event) {
 		$('#albumView').load('https://youlitu.github.io/Project/qiniu/ajaxDescription.html');
-		jQuery(document).ready(function($) {
-			carouselControl();
-			downloadButton();
-		});
+
+		// jQuery(document).ready(function($) {
+		// 	carouselControl();
+		// 	downloadButton();
+		// });
+		if (typeof $("#albumPhoto") === "Object") {
+			alert("1")
+		}
+		
 	});
 
 
@@ -69,7 +74,7 @@ jQuery(document).ready(function($) {
 		var imgElement = $(".c-control").prev().children();
 		var imgElementSrc = imgElement.attr('src');
 
-		var srcPosition = imgElementSrc.slice(-5,-4 );
+		var srcPosition = imgElementSrc.toString().slice(-5,-4 );
 		var newSrcNum = parseInt(srcPosition);
 		var newSrc = "";
 		// download button
@@ -97,11 +102,11 @@ jQuery(document).ready(function($) {
 				
 	}
 	$(".i-download").bind('click', function downloadButton(event) {
-		var src = $("#ablumPhoto").attr('src');
+		var src = $("#albumPhoto").attr('src');
 		$(".i-download").attr('href',src);
 	});
 	// function downloadButton() {
-	// 	var src = $("#ablumPhoto").attr('src');
+	// 	var src = $("#albumPhoto").attr('src');
 	// 	$(".i-download").attr('href',src);
 	// }
 });
