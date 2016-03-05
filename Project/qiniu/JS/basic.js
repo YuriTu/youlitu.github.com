@@ -16,13 +16,13 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		/* Act on the event */
 		carouselControl();
-		// downloadButton();
 	});
 	$(document).on('click', '.i-download', function(event) {
 		// event.preventDefault();
 		/* Act on the event */
 		downloadButton();
 	});
+
 	// fix button
 	$(".f-fix").click(function(event) {
 		if ($(".f-button").is(':hidden')) {
@@ -79,15 +79,13 @@ jQuery(document).ready(function($) {
 	fileLoadProgressBar();
 	// 显示缩略图
 	fileLoadThumb();
+
 	function carouselControl() {
 		var imgElement = $(".c-control").prev().children();
 		var imgElementSrc = imgElement.attr('src');
-
 		var srcPosition = imgElementSrc.toString().slice(-5,-4 );
 		var newSrcNum = parseInt(srcPosition);
 		var newSrc = "";
-		// download button
-		// $(".i-download").attr('href', imgElementSrc);
 		$(".c-left").click(function(event) {			
 			newSrcNum--;
 			if (newSrcNum <0) {
@@ -107,13 +105,8 @@ jQuery(document).ready(function($) {
 			newSrc = "images/pic/img-"+(newSrcNum)+".jpg";
 			imgElement.attr('src', newSrc);
 			downloadButton();
-		});
-				
-	}
-	// $(".i-download").bind('click', function downloadButton(event) {
-	// 	var src = $("#albumPhoto").attr('src');
-	// 	$(".i-download").attr('href',src);
-	// });
+		});				
+	}	
 	function downloadButton() {
 		var src = $("#albumPhoto").attr('src');
 		$(".i-download").attr('href',src);

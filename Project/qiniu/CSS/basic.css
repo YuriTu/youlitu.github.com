@@ -114,7 +114,6 @@ html,body{
 }
 .m-container .listView .item>img{
 	max-height: 100%;
-	// max-width: 100%;
 }
 
 /*upload modal*/
@@ -126,7 +125,6 @@ html,body{
 	left: 0;
 	z-index: 10;
 	display: none;
-	/*overflow: hidden;*/
 	outline: 0;	
 }
 .mod-modal .mod-dialog {
@@ -235,10 +233,6 @@ html,body{
 	border: 1px solid #000;
 	margin: 10px 5px 0 0;
 }
-
-
-
-
 .mod-footter .btn.upload{
 	width: 80px;
 	height: 50px;
@@ -246,8 +240,6 @@ html,body{
 	margin: 15px;
 
 	border-radius: 5px;
-	
-
 	color: #fff;
 	font-weight: bold;
 	font-size: 15px;
@@ -257,9 +249,6 @@ html,body{
 .mod-footter .btn.upload:active{
 	background-color: #3658A8;
 }
-
-
-
 /*fixed icon*/
 .f-fix{	
 	width: 100px;
@@ -303,11 +292,9 @@ html,body{
 
 /*carousel*/
 .c-carousel{
-	// width: 1200px;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
-	/*background-color: red;*/
 }
 @media (min-width: 1200px) {
 	.c-carousel{
@@ -358,7 +345,6 @@ html,body{
 	display: inline-block;
 }
 .i-user>img{
-	// float: left;	
 	width: 10%;
 	border-radius: 50%;
 	clear: both；
@@ -412,7 +398,6 @@ html,body{
 	background-color: #5184fc;
 }
 .f-footer .f-container{
-	/*width: 100px;*/
 	margin: 0 auto;
 	line-height: 100px;
 	text-align: center;	
