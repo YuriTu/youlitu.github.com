@@ -1,19 +1,32 @@
 jQuery(document).ready(function($) {
-	
-	$("#send").click(function(event) {
+	var clickSrc;
+	$("div.item").click(function(event) {
 		$('#albumView').load('https://youlitu.github.io/Project/qiniu/ajaxDescription.html');
-
-		// jQuery(document).ready(function($) {
-		// 	carouselControl();
-		// 	downloadButton();
-		// });
-		if (typeof $("#albumPhoto") === "Object") {
-			alert("1")
-		}
-		
+		clickSrc = $(this).children('img').attr('src');
+		alert(clickSrc);
+		// $("#albumPhoto").attr('src', clickSrc);
 	});
-
-
+	$("#albumView").on('load', '#albumPhoto', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		$("#albumPhoto").attr('src', clickSrc);
+	});
+	// $(".c-carousel")
+	// 	.load(function() {
+	// 		 Act on the event 
+	// 		$("#albumPhoto").attr('src', clickSrc);
+	// 	});
+	$(document).on('click', '.c-control', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		carouselControl();
+		// downloadButton();
+	});
+	$(document).on('click', '.i-download', function(event) {
+		// event.preventDefault();
+		/* Act on the event */
+		downloadButton();
+	});
 	// fix button
 	$(".f-fix").click(function(event) {
 		if ($(".f-button").is(':hidden')) {
@@ -101,12 +114,12 @@ jQuery(document).ready(function($) {
 		});
 				
 	}
-	$(".i-download").bind('click', function downloadButton(event) {
-		var src = $("#albumPhoto").attr('src');
-		$(".i-download").attr('href',src);
-	});
-	// function downloadButton() {
+	// $(".i-download").bind('click', function downloadButton(event) {
 	// 	var src = $("#albumPhoto").attr('src');
 	// 	$(".i-download").attr('href',src);
-	// }
+	// });
+	function downloadButton() {
+		var src = $("#albumPhoto").attr('src');
+		$(".i-download").attr('href',src);
+	}
 });

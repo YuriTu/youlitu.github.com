@@ -186,7 +186,7 @@ html,body{
 
 }
 /*progressbar*/
-.mod-body .container .progressBar{
+.mod-body .container #progressBar{
 	margin: 10px 0;
     padding: 3px;
     border: 1px solid #000;
@@ -197,10 +197,10 @@ html,body{
     -o-transition: opacity 1s linear;
     -webkit-transition: opacity 1s linear; 
 }
-.mod-body .container .progressBar .loading{
+.mod-body .container  .loading{
 	opacity: 1.0;
 }
-.mod-body .container .progressBar .percent{
+.mod-body .container  .percent{
 	background-color: #99ccff;
 	height: auto;
 	width: 0;
