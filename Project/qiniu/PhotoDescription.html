@@ -53,6 +53,7 @@
 		</nav><!-- end of navbar -->
 	</header> <!-- end of nav -->
 	<!-- main view -->
+	<!-- main view -->
 	<div class="container"id="albumView">
 		<div class="m-container" >
 			<!-- view -->
@@ -71,43 +72,78 @@
 					<div class="i-user">
 						<img src="images/icon.png" alt="#">
 						<div class="i-userData">
-							<span class="i-userName">name</span>
-							<span class="i-date">date</span>
+							<span class="i-userName">珑珑</span>
+							<span class="i-date">今天12:28</span>
 						</div>						
 					</div>
 					<div class="i-function">
-						<button class="i-liked">liked</button>
-						<button class="i-downLoad">download</button>
+						<a href="#" class="i-fun i-liked">&#x263a; 点个赞</a>
+						<a href="#" download="lg.jpg" class="i-fun i-download">&#x25bc;下载原图</a>
 					</div>
 				</div><!-- end of info -->
-				<div class="i-comment">
+				<!-- <div class="i-comment">
 					<div class="i-user">
 						<img src="images/icon.png" alt="#">
 						<span class="i-userName">name</span>
 						<span class="i-date">date</span>
 					</div>
 					<span class="comment">comment</span>
-				</div>		
+				</div> -->		
 			</div>			
 		</div>
 		
 	</div><!-- end of main view -->
+	<input type="button" id="send" value="ajax"></input>
 	<!-- fixed button -->
-	<div class="f-fix">
-		<a href="#" class="f-button">plus</a>
-		<a href="#" class="f-button">listView</a>
-		<div class="f-icon"></div>
-			
-	</div>	
+	<a href="#" id="plusButton" class="f-button">plus</a>
+	<a href="#" id="changeViewButton" class="f-button">changeView</a>
+	<div class="f-fix"></div>	
+	<!-- model -->
+	<div class="mod-modal fade">
+		<div class="mod-dialog">
+			<div class="mod-content">
+				<div class="mod-header">
+					<!-- close button -->
+					<button class="close">
+						<span>&times;</span>
+						<!-- <span>close</span> -->
+					</button>
+					<h4 class="mod-tittle">upload photo</h4>
+				</div><!-- end of header -->
+
+				<div class="mod-body">
+					<div class="container">
+						<form action="post">
+							<input type="file" id="files" name="files[]" multiple="mutiple" />
+							<!-- input[file]的遮罩 -->
+							<span class="hoverFile"></span>
+							<!-- 详细信息展示 -->
+							<output id="list"></output>
+							<button class="cancelUpload">cancel read</button>
+							<div class="progressBar">
+								<div class="percent">0%</div>
+							</div>
+						</form>
+					</div>					
+				</div><!-- end of body -->
+
+				<div class="mod-footter">
+					<!-- <button class="close">close</button> -->
+					<button class="btn upload">upoload</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<footer class="f-footer">
 		<div class="f-container">
 			<span class="f-span">Copyright &#xa9; 2015 qiniu</span>
 		</div>
 	</footer>
 	<!-- JQ文件 -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	 -->
 	<!--// <script>window.jQuery || document.write('<script type="text/javascript" src = "javascripts/librarys/jquery-2.1.4.min.js"><\/script>')</script>-->
-	<!-- // <script type="text/javascript" src = "javascripts/jquery-2.1.4.min.js"></script> -->
+	// <script type="text/javascript" src = "JS/jquery-2.1.4.min.js"></script>
 
 
 
@@ -115,6 +151,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <!-- // <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" ></script> -->
 	<!-- // <script type="text/javascript" src ="javascripts/Bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="JS/YJLib.js"></script>
 	<script type="text/javascript" src="JS/basic.js"></script>
 </body>
 </html>

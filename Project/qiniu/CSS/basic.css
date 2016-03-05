@@ -15,15 +15,16 @@ version:0.0.1
 html,body{
 	height: 100%;
 	margin: 0;
-	border:0;	
+	border:0;
+	font: "Microsoft YaHei"	;
 }
 .btn{
 	background-color: transparent;
 	border:none;
 }
 img{
-	width: 100%;
-	height: 100%;
+	// width: 100%;
+	// height: 100%;
 }
 /*@group page components*/
 /*nav*/
@@ -99,8 +100,8 @@ img{
 	background-color: #eee;
 }
 .m-container .row>.item>img{
-	min-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 }
 .m-container .row :last-child{
@@ -316,12 +317,10 @@ img{
 
 .c-carousel .c-inner{
 	position: relative;
-}
-.c-carousel .c-inner .c-item{
-
+	margin: 10px auto;
 }
 .c-carousel .c-inner .c-item>img{
-	// width: 100%;
+	width: 100%;
 }
 .c-carousel .c-inner .c-control{	
 	width: 80px;
@@ -348,32 +347,64 @@ img{
 .c-carousel .c-control.c-right{
 	right: 0px;
 }
-.i-info{
+
+.i-info,.i-comment{
+	position: relative;
 	padding-left: 15px;
 	padding-right: 15px;
+	margin-bottom: 100px;
 }
 .i-info .i-user{
-	display: block;
-	width: 200px;
+	display: inline-block;
 }
-.i-info .i-user>img{
-	// display: inline-block;
-	width: 50%;
+.i-user>img{
+	// float: left;	
+	width: 10%;
 	border-radius: 50%;
-	
-	// line-height: 50px;
+	clear: both；
 }
 .i-info .i-user .i-userData{
-	display: inline;
-	width: 50%;
-
-	
+	display: inline-block;
+	height: 100%;	
+	font-size: 250%;
+	color: #5184fc;
 }
-.i-info .i-user .i-userName{
-
+.i-info .i-user .i-userData>span{
+	display: block;
+	line-height: 120%;
 }
-.i-info .i-user .i-userName .i-date{
-	text-indent: -50px;
+// function button
+.i-function{
+	line-height: 120%;
+}
+.i-function .i-fun{
+	position: absolute;	
+	right: 15px;
+	top: 10px;
+	width: 200px;
+	height: 50px;
+	margin-left: 10px;
+	padding: 5px;
+	background-color: transparent;
+	border-radius: 5px;
+	border:2px solid #bbb;
+	font-size: 200%;
+	text-align: center;
+	line-height: 50px;
+}
+.i-function .i-liked{
+	right: 250px;
+	color: #FF6666;
+	border-color: #FF6666;
+}
+.i-function .i-download{
+	color: #009966;
+	border-color: #009966;
+}
+.i-comment{
+	padding-bottom: 8%;
+
+	background-color: #bbb;
 }
 /*footer*/
 .f-footer{
