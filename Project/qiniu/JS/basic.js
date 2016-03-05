@@ -6,6 +6,15 @@ jQuery(document).ready(function($) {
 		// 	$("#albumView").html(data);
 		// });
 		$('#albumView').load('https://youlitu.github.io/Project/qiniu/ajaxDescription.html');
+		carouselControl();
+		downloadButton();
+		// $(".c-control")bind('click', function(event) {
+		// 	// 轮播图的控制键
+			
+		// });
+		
+		// 下载原图的src更新
+		
 	});
 
 
@@ -53,11 +62,9 @@ jQuery(document).ready(function($) {
 	$(".close").click(function(event) {
 		$(".mod-modal").fadeOut('400');
 	});
-	// 轮播图的控制键
+	
 	carouselControl();
-	// 下载原图的src更新
 	downloadButton();
-
 	// file
 	// fileURI的支持许可
 	fileReaderPermission();
@@ -71,7 +78,7 @@ jQuery(document).ready(function($) {
 		var imgElement = $(".c-control").prev().children();
 		var imgElementSrc = imgElement.attr('src');
 
-		var srcPosition = imgElementSrc.toString().slice(-5,-4 );
+		var srcPosition = imgElementSrc.slice(-5,-4 );
 		var newSrcNum = parseInt(srcPosition);
 		var newSrc = "";
 		// download button
@@ -98,10 +105,14 @@ jQuery(document).ready(function($) {
 		});
 				
 	}
-	function downloadButton() {
+	$(".i-download").bind('click', function downloadButton(event) {
 		var src = $("#ablumPhoto").attr('src');
 		$(".i-download").attr('href',src);
-	}
+	});
+	// function downloadButton() {
+	// 	var src = $("#ablumPhoto").attr('src');
+	// 	$(".i-download").attr('href',src);
+	// }
 
 	
 		
