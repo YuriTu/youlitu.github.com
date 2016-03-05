@@ -1,11 +1,14 @@
 jQuery(document).ready(function($) {
+	
 	$("#send").click(function(event) {
-		$("#albumView").load("ajaxDescription.html");
+		// $.get('getAjax.php', function(data) {
+		// 	optional stuff to do after success 
+		// 	$("#albumView").html(data);
+		// });
+		$('#albumView').load('https://youlitu.github.io/Project/qiniu/ajaxDescription.html');
 	});
-	// m-container c-carousel c-control
-	$(".c-left").click(function(event) {
-		$()
-	});
+
+
 	// fix button
 	$(".f-fix").click(function(event) {
 		if ($(".f-button").is(':hidden')) {
@@ -50,11 +53,57 @@ jQuery(document).ready(function($) {
 	$(".close").click(function(event) {
 		$(".mod-modal").fadeOut('400');
 	});
+	// 轮播图的控制键
+	carouselControl();
+	// 下载原图的src更新
+	downloadButton();
 
+	// file
+	// fileURI的支持许可
 	fileReaderPermission();
+	// 多重选择的名称信息
 	inputFileSelect();
+	// 显示进度条
 	fileLoadProgressBar();
+	// 显示缩略图
 	fileLoadThumb();
+	function carouselControl() {
+		var imgElement = $(".c-control").prev().children();
+		var imgElementSrc = imgElement.attr('src');
+
+		var srcPosition = imgElementSrc.toString().slice(-5,-4 );
+		var newSrcNum = parseInt(srcPosition);
+		var newSrc = "";
+		// download button
+		// $(".i-download").attr('href', imgElementSrc);
+		$(".c-left").click(function(event) {			
+			newSrcNum--;
+			if (newSrcNum <0) {
+				alert("这是第一张~");
+				newSrcNum++;
+			}
+			newSrc = "images/pic/img-"+(newSrcNum)+".jpg";
+			imgElement.attr('src', newSrc);
+			downloadButton();
+		});
+		$(".c-right").click(function(event) {			
+			newSrcNum++;
+			if (newSrcNum >9) {
+				alert("这是最后一张~");
+				newSrcNum--;
+			}
+			newSrc = "images/pic/img-"+(newSrcNum)+".jpg";
+			imgElement.attr('src', newSrc);
+			downloadButton();
+		});
+				
+	}
+	function downloadButton() {
+		var src = $("#ablumPhoto").attr('src');
+		$(".i-download").attr('href',src);
+	}
+
+	
 		
 
 	

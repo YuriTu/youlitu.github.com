@@ -1,9 +1,11 @@
-<div class="m-container" >
+<?php 
+	header("Content-Type:text/html; charset=utf-8");
+	echo '<div class="m-container" >
 			<!-- view -->
 			<div class="c-carousel">
 				<div class="c-inner">
 					<div class="c-item">
-						<img id="ablumPhoto" src="images/pic/img-1.jpg" alt="#">
+						<img src="images/pic/img-1.jpg" alt="#">
 					</div>	
 					<!-- controls -->
 					<a href="#" class="c-left c-control">&lt;</a>
@@ -15,22 +17,23 @@
 					<div class="i-user">
 						<img src="images/icon.png" alt="#">
 						<div class="i-userData">
-							<span class="i-userName">珑珑</span>
-							<span class="i-date">今天12:28</span>
+							<span class="i-userName">name</span>
+							<span class="i-date">date</span>
 						</div>						
 					</div>
 					<div class="i-function">
-						<a href="#" class="i-fun i-liked">&#x263a; 点个赞</a>
-						<a href="#" download="lg.jpg" class="i-fun i-download">&#x25bc;下载原图</a>
+						<button class="i-liked">liked</button>
+						<button class="i-downLoad">download</button>
 					</div>
 				</div><!-- end of info -->
-				<!-- <div class="i-comment">
+				<div class="i-comment">
 					<div class="i-user">
 						<img src="images/icon.png" alt="#">
 						<span class="i-userName">name</span>
 						<span class="i-date">date</span>
 					</div>
 					<span class="comment">comment</span>
-				</div> -->		
+				</div>		
 			</div>			
-		</div>
+		</div>';
+?>
