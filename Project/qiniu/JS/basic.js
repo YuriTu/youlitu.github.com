@@ -4,7 +4,6 @@ jQuery(document).ready(function($) {
 		$('#albumView').load('https://youlitu.github.io/Project/qiniu/ajaxDescription.html');
 		clickSrc = $(this).children('img').attr('src');
 		alert(clickSrc);
-		// $("#albumPhoto").attr('src', clickSrc);
 	});
 	$("#albumView").on('load', '#albumPhoto', function(event) {
 		event.preventDefault();
@@ -12,11 +11,7 @@ jQuery(document).ready(function($) {
 		$("#albumPhoto").attr('src', clickSrc);
 		$(".i-download").attr('href',clickSrc);
 	});
-	// $(".c-carousel")
-	// 	.load(function() {
-	// 		 Act on the event 
-	// 		$("#albumPhoto").attr('src', clickSrc);
-	// 	});
+	
 	$(document).on('click', '.c-control', function(event) {
 		event.preventDefault();
 		/* Act on the event */
