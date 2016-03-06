@@ -1,31 +1,25 @@
 jQuery(document).ready(function($) {
 	var clickSrc;
 	var countItem = document.getElementsByClassName('item').length;
-	
+	// ajax读取详情页
 	$("div.item").click(function(event) {
 		$('#albumView').load('https://youlitu.github.io/Project/qiniu/ajaxDescription.html');
 		clickSrc = $(this).children('img').attr('src');
-		// alert(clickSrc);
 	});
-	// 1.on load 事件前置
-	// 2.设置定时器，点击item后，把src换了
-	// 应该是因为DOM没有加载完，事件没有绑定上，但是下面的就用on绑定上了不是...
-	$('#albumView').one('click', 'img#albumPhoto', function(event) {
-		// event.preventDefault();
-		/* Act on the event */
+																				
+	// 1.设置定时器，点击item后，把src换了	// 2.应该是因为DOM没有加载完，事件没有绑定上，但是下面的就用on绑定上了不是...	// 3.(╯‵□′)╯︵┻━┻ click都绑定上为什么load就不行啊
+
+	// 新DOM生成后的图片与download按钮的src改变
+	$('#albumView')
+		.one('click', 'img#albumPhoto', function(event) {
 		$("#albumPhoto").attr('src', clickSrc);
 		$(".i-download").attr('href',clickSrc);
-	});
-	
-	$('#albumView').on('click', '.c-control', function(event) {
+	})
+		.on('click', '.c-control', function(event) {
 		event.preventDefault();
 		/* Act on the event */
 		carouselControl();
 	});
-	// $(document).on('click', '.i-download', function(event) {
-		
-	// 	downloadButton();
-	// });
 
 	// fix button
 	$(".f-fix").click(function(event) {
@@ -71,9 +65,6 @@ jQuery(document).ready(function($) {
 	$(".close").click(function(event) {
 		$(".mod-modal").fadeOut('400');
 	});
-	
-	// carouselControl();
-	// downloadButton();
 	// file
 	// fileURI的支持许可
 	fileReaderPermission();
@@ -93,7 +84,6 @@ jQuery(document).ready(function($) {
 		$(".c-left").click(function(event) {			
 			newSrcNum--;
 			if (newSrcNum <0) {
-				// alert("这是第一张~");
 				console.log("first photo");
 				newSrcNum = countItem-1;
 			}
@@ -104,7 +94,6 @@ jQuery(document).ready(function($) {
 		$(".c-right").click(function(event) {			
 			newSrcNum++;
 			if (newSrcNum >(countItem-1) ) {
-				// alert("这是最后一张~");
 				console.log("last photo");
 				newSrcNum = 0;
 			}
