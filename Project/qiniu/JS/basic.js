@@ -1,27 +1,31 @@
 jQuery(document).ready(function($) {
 	var clickSrc;
+	var countItem = document.getElementsByClassName('item').length;
+	
 	$("div.item").click(function(event) {
 		$('#albumView').load('https://youlitu.github.io/Project/qiniu/ajaxDescription.html');
 		clickSrc = $(this).children('img').attr('src');
-		alert(clickSrc);
+		// alert(clickSrc);
 	});
-	$("#albumView").on('load', '#albumPhoto', function(event) {
-		event.preventDefault();
+	// 1.on load 事件前置
+	// 2.设置定时器，点击item后，把src换了
+	// 应该是因为DOM没有加载完，事件没有绑定上，但是下面的就用on绑定上了不是...
+	$('#albumView').one('click', 'img#albumPhoto', function(event) {
+		// event.preventDefault();
 		/* Act on the event */
 		$("#albumPhoto").attr('src', clickSrc);
 		$(".i-download").attr('href',clickSrc);
 	});
 	
-	$(document).on('click', '.c-control', function(event) {
+	$('#albumView').on('click', '.c-control', function(event) {
 		event.preventDefault();
 		/* Act on the event */
 		carouselControl();
 	});
-	$(document).on('click', '.i-download', function(event) {
-		// event.preventDefault();
-		/* Act on the event */
-		downloadButton();
-	});
+	// $(document).on('click', '.i-download', function(event) {
+		
+	// 	downloadButton();
+	// });
 
 	// fix button
 	$(".f-fix").click(function(event) {
@@ -89,8 +93,9 @@ jQuery(document).ready(function($) {
 		$(".c-left").click(function(event) {			
 			newSrcNum--;
 			if (newSrcNum <0) {
-				alert("这是第一张~");
-				newSrcNum++;
+				// alert("这是第一张~");
+				console.log("first photo");
+				newSrcNum = countItem-1;
 			}
 			newSrc = "images/pic/img-"+(newSrcNum)+".jpg";
 			imgElement.attr('src', newSrc);
@@ -98,9 +103,10 @@ jQuery(document).ready(function($) {
 		});
 		$(".c-right").click(function(event) {			
 			newSrcNum++;
-			if (newSrcNum >9) {
-				alert("这是最后一张~");
-				newSrcNum--;
+			if (newSrcNum >(countItem-1) ) {
+				// alert("这是最后一张~");
+				console.log("last photo");
+				newSrcNum = 0;
 			}
 			newSrc = "images/pic/img-"+(newSrcNum)+".jpg";
 			imgElement.attr('src', newSrc);
