@@ -60,6 +60,8 @@ $(function  () {
     .attr('title', '学校P2P下载站的优化以及前端重构，第一次开始接触前后端合作');
   $("#projectSix")
     .attr('title', '开始学习javaweb后端操作，服务器在网易蜂巢使用CentOS操作系统');
+  $("#projectSeven")
+    .attr('title', '相册的前端部分，实现1.图片批量上传2.显示上传进度3.缩略图列表视图转换4.ajax显示图片详情');
   // 项目title展示
   
   $("div.projectShow")
