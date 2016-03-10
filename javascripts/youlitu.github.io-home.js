@@ -61,7 +61,7 @@ $(function  () {
   $("#projectSix")
     .attr('title', '开始学习javaweb后端操作，服务器在网易蜂巢使用CentOS操作系统');
   $("#projectSeven")
-    .attr('title', '相册的前端部分，实现1.图片批量上传2.显示上传进度3.缩略图列表视图转换4.ajax显示图片详情');
+    .attr('title', '网络相册的前端部分，使用了html5新特性新API实现1.图片批量上传2.显示上传进度3.缩略图列表视图转换4.ajax显示图片详情');
   // 项目title展示
   
   $("div.projectShow")
